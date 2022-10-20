@@ -27,3 +27,10 @@ $dirty-blue: #438792;
 $silver: #BFCDD0;
 $pale-grey: #DDE9ED;
 $dull-orange: #E17334;
+
+// // sizes rem 
+
+$defaultFontSize: 16;
+@function rem($pixels) {
+  @return ($pixels / $defaultFontSize * 1rem);
+}
