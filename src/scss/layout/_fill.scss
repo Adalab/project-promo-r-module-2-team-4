@@ -1,0 +1,58 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: none;
+    margin-bottom: rem(20);
+
+    &-legend {
+        color: #404142;
+        text-transform: uppercase;
+      font-size: rem(18);
+        font-weight: 400;
+         width: 100%;
+         display: flex;
+         justify-content: center;
+      
+    }
+
+    &-label {
+        color: $dark-green-blue;
+        font-size: rem(14);
+        text-align: left;
+        width: rem(281);
+        line-height: 1.43;
+        padding-bottom: rem(7);
+        padding-top: rem(20);
+    }
+
+    &-keyboard {
+        color: $dull-orange;
+    width: rem(21);
+    height: rem(18);
+    }
+
+    &-title {
+        margin-left: rem(10);
+        margin-right: rem(155);
+    }
+
+   
+    &-input {
+        
+        width: rem(281);
+        height: rem(30);
+        border: solid 1px $hospital-green;
+        
+    }
+
+    &-checkbox {
+        width: rem(30);
+        height: rem(30);
+        border: solid 1px $hospital-green;
+    }
+}
+
+.fa-keyboard {
+    
+}
