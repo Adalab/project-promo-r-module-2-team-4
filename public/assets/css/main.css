@@ -79,7 +79,7 @@
     color: #404142;
     text-transform: uppercase;
     font-size: 1.125rem;
-    font-weight: 400;
+    font-weight: 600;
     width: 100%;
     display: flex;
     justify-content: center; }
@@ -101,11 +101,32 @@
   .form-input {
     width: 17.5625rem;
     height: 1.875rem;
-    border: solid 1px #A2DEAF; }
+    border: solid 1px #A2DEAF;
+    padding: 0.1875rem 0 0.4375rem 0.5625rem;
+    font-size: 0.875rem; }
+  .form-button {
+    width: 8.75rem;
+    height: 1.875rem;
+    background-color: #E17334;
+    color: #fff;
+    border: none;
+    border-radius: 0.1875rem; }
+  .form-add-image {
+    display: flex;
+    gap: 2.625rem;
+    width: 17.5625rem; }
   .form-checkbox {
     width: 1.875rem;
     height: 1.875rem;
     border: solid 1px #A2DEAF; }
+  .form-line {
+    width: 17.5rem;
+    height: 0.0625rem;
+    background-color: #BFCDD0;
+    margin-top: 1.875rem; }
+
+.hidden {
+  display: none; }
 
 .footer {
   border-top: solid 0.0625rem #6B6B6B;

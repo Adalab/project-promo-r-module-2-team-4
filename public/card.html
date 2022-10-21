@@ -1,87 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/main.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/bd9669bb11.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/main.css" />
     <title>Document</title>
-</head>
-
-<body>
-   
+  </head>
+  <body>
     <header class="header">
-        <img  class= "header-image" src="./assets/images/cards.svg">
+      <img class="header-image" src="./assets/images/cards.svg" />
     </header>
     <main>
-        <section>
-            <button> Reset </button>
-            <article>
-                <div>
-                    <h1> Nombre y apellido </h1>
-                    <h2>front end </h2>
-                </div>
-                <img src="" alt="">
-                <i class="fa-solid fa-mobile-screen-button"></i>
-                <i class="fa-regular fa-envelope"></i>
-                <i class="fa-brands fa-linkedin-in"></i>
-                <i class="fa-brands fa-github-alt"></i>
+      <section>
+        <button>Reset</button>
+        <article>
+          <div>
+            <h1>Nombre y apellido</h1>
+            <h2>front end</h2>
+          </div>
+          <img src="" alt="" />
+          <i class="fa-solid fa-mobile-screen-button"></i>
+          <i class="fa-regular fa-envelope"></i>
+          <i class="fa-brands fa-linkedin-in"></i>
+          <i class="fa-brands fa-github-alt"></i>
+        </article>
+      </section>
 
-            </article>
-        </section>
+      <section class="section-form">
+        <form action="https://formspree.io/f/meqdlvpw" method="POST">
+          <fieldset class="form">
+            <legend class="form-legend">
+              <span class="form-keyboard"><i class="fa-regular fa-keyboard"></i></span>
 
-        <section class="section-form">
-            <form action="https://formspree.io/f/meqdlvpw" method="POST">
-              <fieldset class="form">
-              
-                <legend class="form-legend">  
-                
-                <span class="form-keyboard"><i class="fa-regular fa-keyboard"></i></span>
-                
-                <span class="form-title">rellena </span>
-                <span class="form-arrow"><i class="fa-solid fa-chevron-up"></i></span>
-             
+              <span class="form-title">rellena </span>
+              <span class="form-arrow fill-arrow-down"><i class="fa-solid fa-chevron-down"></i></span>
+              <span class="form-arrow hidden fill-arrow-up"><i class="fa-solid fa-chevron-up"></i></span>
             </legend>
+            <div class="form-container hidden">
+              <label class="form-label" for="completeName">Nombre completo</label>
+              <input class="form-input" type="text" placeholder="Ej: Maricarmen" id="completeName" name="completeName" />
 
-                <label class="form-label" for="completeName">Nombre completo</label>
-                <input class="form-input" type="text" placeholder="Ej: Maricarmen" id="completeName" name="completeName">
+              <label class="form-label" for="position">Puesto</label>
+              <input class="form-input" type="text" placeholder="Ej: Front-end unicorn" id="position" name="position" />
 
-                <label class="form-label" for="position">Puesto</label>
-                <input class="form-input" type="text" placeholder="Ej: Front-end unicorn" id="position" name="position">
-
-                <label class="form-label" for="addImage">Imagen de perfil</label>
-                <input class="form-input" type="file" placeholder="Añadir imagen" id="addImage" name="addImage">
-                 
+              <label class="form-label" for="addImage">Imagen de perfil</label>
+              <div class="form-add-image">
+                <button class="form-button">Añadir imagen</button>
                 <div class="form-checkbox"></div>
+              </div>
 
-                <label class="form-label" for="email">Email</label>
-                <input class="form-input" type="email" placeholder="Ej: maricarmen@gmail.com" id="email" name="email">
+              <label class="form-label" for="email">Email</label>
+              <input class="form-input" type="email" placeholder="Ej: maricarmen@gmail.com" id="email" name="email" />
 
-                <label class="form-label" for="phone">Teléfono</label>
-                <input class="form-input" type="tel" placeholder="Ej:66687879" id="phone" name="phone">
+              <label class="form-label" for="phone">Teléfono</label>
+              <input class="form-input" type="tel" placeholder="Ej:66687879" id="phone" name="phone" />
 
-                <label class="form-label" for="linkedin">LinkedIn</label>
-                <input class="form-input" type="url" placeholder="Ej: url/linkedin" id="linkedin" name="linkedin">
+              <label class="form-label" for="linkedin">LinkedIn</label>
+              <input class="form-input" type="text" placeholder="Ej: url/linkedin" id="linkedin" name="linkedin" />
 
-                <label class="form-label" for="github">Github</label>
-                <input class="form-input" type="url" placeholder="Ej: url/github" id="github" name="github">
+              <label class="form-label" for="github">Github</label>
+              <input class="form-input" type="text" placeholder="Ej: url/github" id="github" name="github" />
+            </div>
 
-                <div class="form-line"></div>
-              </fieldset>
-            </form>
+            <div class="form-line"></div>
+          </fieldset>
+        </form>
 
-        </section>
+      </section>
     </main>
- 
 
     <footer class="footer">
         <small class="footer-copy">Awesome profile-cards &copy; 2022 </small>
         <img  class="footer-img" src="./assets/images/adalab.png" alt="adalab" title="Logo de Adalab" />
       </footer>
     <script src="./assets/js/main.js"></script>
-    
-</body>
-
+  </body>
 </html>
