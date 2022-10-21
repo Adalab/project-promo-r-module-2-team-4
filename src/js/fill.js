@@ -23,7 +23,3 @@ arrowDown.addEventListener("click", (e) => {
     arrowUp.classList.remove("hidden");
   }
 });
-
-"use strict";
-
-//# sourceMappingURL=main.js.map
