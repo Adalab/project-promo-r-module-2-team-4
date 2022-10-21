@@ -67,4 +67,26 @@
     width: 6.4375rem;
     height: 2.5rem; }
 
+.colors {
+  text-transform: uppercase;
+  color: red;
+  size: 14px;
+  text-align: left;
+  font-weight: 400; }
+
+.colors1 {
+  display: flex; }
+  .colors1__green {
+    width: 1.875rem;
+    height: 1.5625rem;
+    background-color: #114E4E; }
+  .colors1__blueD {
+    width: 1.875rem;
+    height: 1.5625rem;
+    background-color: #438792; }
+  .colors1__blueL {
+    width: 1.875rem;
+    height: 1.5625rem;
+    background-color: #A2DEAF; }
+
 /*# sourceMappingURL=main.css.map */

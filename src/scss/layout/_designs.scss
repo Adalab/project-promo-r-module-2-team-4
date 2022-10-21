@@ -1,0 +1,28 @@
+.colors{
+    text-transform: uppercase;
+    color: red;
+    size: 14px;
+    text-align: left; 
+    font-weight: 400;  
+        
+}
+
+.colors1{
+    display: flex;
+        &__green{
+            width: rem(30);
+            height: rem(25);
+            background-color: $dark-green-blue;
+        }
+        &__blueD{
+            width: rem(30);
+            height: rem(25);
+            background-color: $dirty-blue;
+        }
+        &__blueL{
+            width: rem(30);
+            height: rem(25);
+            background-color: $hospital-green;
+        }
+}
+
