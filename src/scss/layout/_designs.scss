@@ -1,14 +1,44 @@
+.design{
+    @media all and (min-width: 768px) {
+        background:linear-gradient ($white-four, $white-two);
+        text-align: left;
+    }
+}
 .colors{
     text-transform: uppercase;
-    color: red;
-    size: 14px;
+    color: $gunmetal;
+    font-size: 14px;
     text-align: left; 
     font-weight: 400;  
+    margin-left:  39px;
+    margin-top: 22px;
+    @media all and (min-width: 768px) {
+        
+    }
         
 }
+.palete{
+    display: flex;
+    
+   
+}
+.colorpalete{
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    gap: 10px;
+    margin-top: 20px;
+    margin-right: 20px;
+    position: relative;
+    bottom: 20px;
+ 
+    
+   
+
+ }
 
 .colors1{
-    display: flex;
+    
         &__green{
             width: rem(30);
             height: rem(25);
@@ -25,4 +55,40 @@
             background-color: $hospital-green;
         }
 }
+.colors2{
+    display: flex;
+        &__blood{
+            width: rem(30);
+            height: rem(25);
+            background-color: $dried-blood;
+        }
+        &__rusty{
+            width: rem(30);
+            height: rem(25);
+            background-color:  $rusty-red;
+        }
+        &__tomato{
+            width: rem(30);
+            height: rem(25);
+            background-color: $tomato;
+        }
+}
 
+.colors3{
+    display: flex;
+        &__slate{
+            width: rem(30);
+            height: rem(25);
+            background-color: $slate;
+        }
+        &__orange{
+            width: rem(30);
+            height: rem(25);
+            background-color: $faded-orange;
+        }
+        &__greyBlue{
+            width: rem(30);
+            height: rem(25);
+            background-color: $light-grey-blue;
+        }
+}

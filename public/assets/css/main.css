@@ -88,26 +88,76 @@
     width: 6.4375rem;
     height: 2.5rem; }
 
+@media all and (min-width: 768px) {
+  .design {
+    background: linear-gradient #F5F5F5, #fff;
+    text-align: left; } }
+
 .colors {
   text-transform: uppercase;
-  color: red;
-  size: 14px;
+  color: #54585A;
+  font-size: 14px;
   text-align: left;
-  font-weight: 400; }
+  font-weight: 400;
+  margin-left: 39px;
+  margin-top: 22px; }
 
-.colors1 {
+.palete {
   display: flex; }
-  .colors1__green {
+
+.colorpalete {
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  gap: 10px;
+  margin-top: 20px;
+  margin-right: 20px;
+  position: relative;
+  bottom: 20px; }
+
+.colors1__green {
+  width: 1.875rem;
+  height: 1.5625rem;
+  background-color: #114E4E; }
+
+.colors1__blueD {
+  width: 1.875rem;
+  height: 1.5625rem;
+  background-color: #438792; }
+
+.colors1__blueL {
+  width: 1.875rem;
+  height: 1.5625rem;
+  background-color: #A2DEAF; }
+
+.colors2 {
+  display: flex; }
+  .colors2__blood {
     width: 1.875rem;
     height: 1.5625rem;
-    background-color: #114E4E; }
-  .colors1__blueD {
+    background-color: #420101; }
+  .colors2__rusty {
     width: 1.875rem;
     height: 1.5625rem;
-    background-color: #438792; }
-  .colors1__blueL {
+    background-color: #BD1010; }
+  .colors2__tomato {
     width: 1.875rem;
     height: 1.5625rem;
-    background-color: #A2DEAF; }
+    background-color: #E95626; }
+
+.colors3 {
+  display: flex; }
+  .colors3__slate {
+    width: 1.875rem;
+    height: 1.5625rem;
+    background-color: #3E5B65; }
+  .colors3__orange {
+    width: 1.875rem;
+    height: 1.5625rem;
+    background-color: #EAB052; }
+  .colors3__greyBlue {
+    width: 1.875rem;
+    height: 1.5625rem;
+    background-color: #A0C0CF; }
 
 /*# sourceMappingURL=main.css.map */
