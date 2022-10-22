@@ -1,9 +1,4 @@
-.design{
-    @media all and (min-width: 768px) {
-        background:linear-gradient ($white-four, $white-two);
-        text-align: left;
-    }
-}
+
 .colors{
     text-transform: uppercase;
     color: $gunmetal;
@@ -12,9 +7,7 @@
     font-weight: 400;  
     margin-left:  39px;
     margin-top: 22px;
-    @media all and (min-width: 768px) {
-        
-    }
+   
         
 }
 .palete{
@@ -31,6 +24,11 @@
     margin-right: 20px;
     position: relative;
     bottom: 20px;
+    @media all and (min-width: 768px) {
+        justify-content: left;
+        position: relative;
+        left: 252px;
+    }
  
     
    
@@ -91,4 +89,7 @@
             height: rem(25);
             background-color: $light-grey-blue;
         }
+}
+.oculto{
+    display: none;
 }

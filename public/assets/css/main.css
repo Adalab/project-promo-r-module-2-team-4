@@ -143,11 +143,6 @@
     width: 6.4375rem;
     height: 2.5rem; }
 
-@media all and (min-width: 768px) {
-  .design {
-    background: linear-gradient #F5F5F5, #fff;
-    text-align: left; } }
-
 .colors {
   text-transform: uppercase;
   color: #54585A;
@@ -169,6 +164,11 @@
   margin-right: 20px;
   position: relative;
   bottom: 20px; }
+  @media all and (min-width: 768px) {
+    .colorpalete {
+      justify-content: left;
+      position: relative;
+      left: 252px; } }
 
 .colors1__green {
   width: 1.875rem;
@@ -214,5 +214,8 @@
     width: 1.875rem;
     height: 1.5625rem;
     background-color: #A0C0CF; }
+
+.oculto {
+  display: none; }
 
 /*# sourceMappingURL=main.css.map */

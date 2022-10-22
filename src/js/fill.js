@@ -15,9 +15,9 @@ arrowUp.addEventListener("click", (e) => {
 });
 arrowDown.addEventListener("click", (e) => {
   e.preventDefault();
-  if (arrowDown.classList.contains("hidden") && formContainer.classList.contains("hidden")) {
+  if (arrowDown.classList.contains("hidden") && paleteColors.classList.contains("hidden")) {
     arrowDown.classList.remove("hidden");
-    formContainer.classList.remove("hidden");
+    paleteColors.classList.remove("hidden");
   } else {
     arrowDown.classList.add("hidden");
     arrowUp.classList.remove("hidden");
