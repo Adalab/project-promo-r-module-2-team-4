@@ -1,0 +1,55 @@
+.main {
+    background-color: $white-four;  
+    height: rem(458);
+}
+.image {
+    margin-top:rem(95);
+    margin-left: rem(35);
+    width: rem(250);
+    height: rem(63);
+}
+.title-create{
+    margin-top: rem(35.4);
+    margin-left:rem(47.7);
+    color: $dull-orange;
+    font-size: rem(19.2);
+    font-family: $titleFont;
+    font-weight: 900;
+    width: rem(223);
+}
+.subtitle-create{
+    margin-left: rem(27.2);
+    font-size: rem(12.8);
+    color: $dark-green-blue;
+    font-family: $mainFont;
+    text-align: center;
+    width: rem(264.8);
+}
+.box-images{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: rem(30);
+    margin-left: rem(25.6);
+    width: rem(268);
+    height: rem(73.8);
+    border: solid rem(1.6);
+    border-radius: rem(4);
+    border-color:rgba(225, 115, 52, 0.21); 
+    margin-top: rem(17.8)
+}
+.steps{
+    width: rem(60);
+    height: rem(48.8);
+    font-size: rem(12.8);
+    font-family: $mainFont;
+    text-align: center;
+    opacity: 100;
+}
+.text-step{
+    color: $gunmetal;
+}
+.icon{
+    border-color:$dull-orange; 
+}
