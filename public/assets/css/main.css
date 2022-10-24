@@ -1,16 +1,18 @@
 .main {
   background-color: #F5F5F5;
-  height: 28.625rem; }
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; }
 
 .image {
   margin-top: 5.9375rem;
-  margin-left: 2.1875rem;
   width: 15.625rem;
   height: 3.9375rem; }
 
 .title-create {
   margin-top: 2.2125rem;
-  margin-left: 2.98125rem;
   color: #E17334;
   font-size: 1.2rem;
   font-family: "Merriweather", serif;
@@ -18,7 +20,6 @@
   width: 13.9375rem; }
 
 .subtitle-create {
-  margin-left: 1.7rem;
   font-size: 0.8rem;
   color: #114E4E;
   font-family: "Open Sans", sans-serif;
@@ -31,13 +32,13 @@
   justify-content: center;
   align-items: center;
   gap: 1.875rem;
-  margin-left: 1.6rem;
   width: 16.75rem;
   height: 4.6125rem;
   border: solid 0.1rem;
   border-radius: 0.25rem;
   border-color: rgba(225, 115, 52, 0.21);
-  margin-top: 1.1125rem; }
+  margin-top: 1.1125rem;
+  padding: 0.9375rem; }
 
 .steps {
   width: 3.75rem;
@@ -51,7 +52,29 @@
   color: #54585A; }
 
 .icon {
-  border-color: #E17334; }
+  color: #E17334;
+  width: auto;
+  font-size: 1.25rem; }
+
+.button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px; }
+  .button-start {
+    text-transform: uppercase;
+    background-color: #438792;
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    width: 8.0625rem;
+    height: 2.625rem;
+    padding: 0.625rem 1.25rem;
+    border-radius: 1.3125rem;
+    margin-top: 2.4125rem;
+    text-decoration: none; }
 
 * {
   box-sizing: border-box;
@@ -135,7 +158,10 @@
   align-items: center;
   justify-content: center;
   padding-top: 1.125rem;
-  gap: 0.75rem; }
+  gap: 0.75rem;
+  position: fixed;
+  bottom: 1.25rem;
+  width: 100%; }
   .footer-copy {
     color: #6B6B6B;
     font-size: 14px; }

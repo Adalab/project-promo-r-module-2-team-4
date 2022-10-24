@@ -1,16 +1,18 @@
 .main {
     background-color: $white-four;  
-    height: rem(458);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 .image {
     margin-top:rem(95);
-    margin-left: rem(35);
     width: rem(250);
     height: rem(63);
 }
 .title-create{
     margin-top: rem(35.4);
-    margin-left:rem(47.7);
     color: $dull-orange;
     font-size: rem(19.2);
     font-family: $titleFont;
@@ -18,7 +20,6 @@
     width: rem(223);
 }
 .subtitle-create{
-    margin-left: rem(27.2);
     font-size: rem(12.8);
     color: $dark-green-blue;
     font-family: $mainFont;
@@ -31,13 +32,13 @@
     justify-content: center;
     align-items: center;
     gap: rem(30);
-    margin-left: rem(25.6);
     width: rem(268);
     height: rem(73.8);
     border: solid rem(1.6);
     border-radius: rem(4);
     border-color:rgba(225, 115, 52, 0.21); 
-    margin-top: rem(17.8)
+    margin-top: rem(17.8);
+    padding: rem(15);
 }
 .steps{
     width: rem(60);
@@ -51,5 +52,29 @@
     color: $gunmetal;
 }
 .icon{
-    border-color:$dull-orange; 
+    color:$dull-orange; 
+    width: auto;
+    font-size: rem(20);
+}
+.button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    
+    &-start{
+        text-transform: uppercase;
+        background-color: $dirty-blue;
+        color: $white-two;
+        font-size: rem(16);
+        text-align: center;
+        font-family: $mainFont;
+        width: rem(129);
+        height: rem(42);
+        padding: rem(10) rem(20);
+        border-radius: rem(21);
+        margin-top: rem(38.6); 
+        text-decoration: none;
+    }
 }
