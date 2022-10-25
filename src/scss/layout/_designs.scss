@@ -1,95 +1,87 @@
+.design {
+  border-style: none;
+}
 
-.colors{
-    text-transform: uppercase;
-    color: $gunmetal;
-    font-size: 14px;
-    text-align: left; 
-    font-weight: 400;  
-    margin-left:  39px;
-    margin-top: 22px;
-   
-        
+.colors {
+  text-transform: uppercase;
+  color: $gunmetal;
+  font-size: 14px;
+  text-align: left;
+  font-weight: 400;
+  margin-left: 39px;
+  margin-top: 22px;
 }
-.palete{
-    display: flex;
-    
-   
+.palete {
+  display: flex;
 }
-.colorpalete{
-    display: flex;
-    align-items: right;
+.colorpalete {
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  gap: 10px;
+  margin-right: rem(20);
+  margin-top: 20px;
+  position: relative;
+  bottom: 20px;
+  @media all and (min-width: 768px) {
     justify-content: right;
-    gap: 10px;
-    margin-top: 20px;
-    margin-right: 20px;
-    position: relative;
-    bottom: 20px;
-    @media all and (min-width: 768px) {
-        justify-content: left;
-        position: relative;
-        left: 252px;
-    }
- 
-    
-   
-
- }
-
-.colors1{
-    
-        &__green{
-            width: rem(30);
-            height: rem(25);
-            background-color: $dark-green-blue;
-        }
-        &__blueD{
-            width: rem(30);
-            height: rem(25);
-            background-color: $dirty-blue;
-        }
-        &__blueL{
-            width: rem(30);
-            height: rem(25);
-            background-color: $hospital-green;
-        }
-}
-.colors2{
-    display: flex;
-        &__blood{
-            width: rem(30);
-            height: rem(25);
-            background-color: $dried-blood;
-        }
-        &__rusty{
-            width: rem(30);
-            height: rem(25);
-            background-color:  $rusty-red;
-        }
-        &__tomato{
-            width: rem(30);
-            height: rem(25);
-            background-color: $tomato;
-        }
+  }
 }
 
-.colors3{
-    display: flex;
-        &__slate{
-            width: rem(30);
-            height: rem(25);
-            background-color: $slate;
-        }
-        &__orange{
-            width: rem(30);
-            height: rem(25);
-            background-color: $faded-orange;
-        }
-        &__greyBlue{
-            width: rem(30);
-            height: rem(25);
-            background-color: $light-grey-blue;
-        }
+.colors1 {
+  &__green {
+    width: rem(30);
+    height: rem(25);
+    background-color: $dark-green-blue;
+  }
+  &__blueD {
+    width: rem(30);
+    height: rem(25);
+    background-color: $dirty-blue;
+  }
+  &__blueL {
+    width: rem(30);
+    height: rem(25);
+    background-color: $hospital-green;
+  }
 }
-.oculto{
-    display: none;
+.colors2 {
+  display: flex;
+  &__blood {
+    width: rem(30);
+    height: rem(25);
+    background-color: $dried-blood;
+  }
+  &__rusty {
+    width: rem(30);
+    height: rem(25);
+    background-color: $rusty-red;
+  }
+  &__tomato {
+    width: rem(30);
+    height: rem(25);
+    background-color: $tomato;
+  }
+}
+
+.colors3 {
+  display: flex;
+  &__slate {
+    width: rem(30);
+    height: rem(25);
+    background-color: $slate;
+  }
+  &__orange {
+    width: rem(30);
+    height: rem(25);
+    background-color: $faded-orange;
+  }
+  &__greyBlue {
+    width: rem(30);
+    height: rem(25);
+    background-color: $light-grey-blue;
+  }
+}
+.oculto {
+  display: none;
 }

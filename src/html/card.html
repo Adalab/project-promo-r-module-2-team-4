@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <include src="./partials/links/links.html"></include>
+    <title>Awesome profile-cards</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <include src="./partials/links/links.html"></include>
-  <title>Document</title>
-</head>
+  <body>
+    <header class="header">
+      <img class="header-image" src="./assets/images/cards.svg" />
+    </header>
+    <main>
+      <section>
+        <include src="./partials/section-card.html"></include>
+      </section>
 
-<body>
-  <header class="header">
-    <img class="header-image" src="./assets/images/cards.svg" />
-  </header>
-  <main>
-    <section>
-      <include src="./partials/Section-Card.html"></include>
-    </section>
+      <section class="section-form">
+        <form action="https://formspree.io/f/meqdlvpw" method="POST">
+          <include src="./partials/designs.html"></include>
+          <include src="./partials/fill.html"></include>
+          <include src="./partials/share.html"></include>
+        </form>
+      </section>
+    </main>
 
-    <section class="section-form">
-      <include src="./partials/designs.html"></include>
-      <include src="./partials/fill.html"></include>
-      <include src="./partials/share.html"></include>
-    </section>
-  </main>
-
-  <include src="./partials/footer.html"></include>
-  <script src="./assets/js/main.js"></script>
-</body>
-
+    <include src="./partials/footer.html"></include>
+    <script src="./assets/js/main.js"></script>
+  </body>
 </html>

@@ -1,8 +1,11 @@
-.form {
+.form-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   border-style: none;
+}
+
+.form {
   margin-bottom: rem(20);
 
   &-legend {
@@ -64,6 +67,6 @@
     margin-top: rem(30);
   }
 }
-.hidden {
-  display: none;
-}
+// .hidden {
+//   display: none;
+// }

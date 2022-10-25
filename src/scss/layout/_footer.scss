@@ -1,26 +1,22 @@
-.footer{
-  border-top: solid rem(1) $brownish-grey ; 
-  display:flex;
+.footer {
+  border-top: solid rem(1) $brownish-grey;
+  display: flex;
   flex-direction: column;
-    align-items: center;
-    justify-content: center ;
-    padding-top: rem(18);
-    gap: rem(12);
-    bottom: rem(20);
-    width: 100%;
-&-copy{
+  align-items: center;
+  justify-content: center;
+  padding-top: rem(18);
+  padding-bottom: rem(20);
+  gap: rem(12);
+  bottom: rem(20);
+  width: 100%;
+  height: 15vh;
+  &-copy {
     color: $brownish-grey;
     font-size: 14px;
+  }
 
-
-}
-
-
-&-img{
+  &-img {
     width: rem(103);
     height: rem(40);
-   
   }
 }
-
-

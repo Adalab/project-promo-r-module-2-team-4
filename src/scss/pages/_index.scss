@@ -1,118 +1,116 @@
 .main {
-    background-color: $white-four;  
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    @media all and (min-width: 768px) {
-       
-    }
+  background-color: $white-four;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media all and (min-width: 768px) {
+  }
 }
 .image {
-    margin-top:rem(95);
-    width: rem(250);
-    height: rem(63);
-    @media all and (min-width: 768px) {
-        width: rem(419);
-        height: rem(105);
-        margin-top: rem(350);
-    }
+  margin-top: rem(95);
+  width: rem(250);
+  height: rem(63);
+  @media all and (min-width: 768px) {
+    width: rem(419);
+    height: rem(105);
+    margin-top: rem(350);
+  }
 }
-.title-create{
-    margin-top: rem(35.4);
-    color: $dull-orange;
-    font-size: rem(19.2);
-    font-family: $titleFont;
-    font-weight: 900;
-    width: rem(223);
-    @media all and (min-width: 768px) {
-        margin-top: rem(31);
-        font-size: rem(24);
-        width: rem(278);
-    }
+.title-create {
+  margin-top: rem(35.4);
+  color: $dull-orange;
+  font-size: rem(19.2);
+  font-family: $titleFont;
+  font-weight: 900;
+  width: rem(223);
+  @media all and (min-width: 768px) {
+    margin-top: rem(31);
+    font-size: rem(24);
+    width: rem(278);
+  }
 }
-.subtitle-create{
-    font-size: rem(12.8);
-    color: $dark-green-blue;
-    font-family: $mainFont;
+.subtitle-create {
+  font-size: rem(12.8);
+  color: $dark-green-blue;
+  font-family: $mainFont;
+  text-align: center;
+  width: rem(264.8);
+  @media all and (min-width: 768px) {
+    font-size: rem(16);
+    width: rem(331);
+  }
+}
+.box-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: rem(30);
+  width: rem(268);
+  height: rem(73.8);
+  border: solid rem(1.6);
+  border-radius: rem(4);
+  border-color: rgba(225, 115, 52, 0.21);
+  margin-top: rem(17.8);
+  padding: rem(15);
+  @media all and (min-width: 768px) {
+    margin-top: rem(27);
+    width: rem(325);
+    height: rem(86);
+    border: solid rem(2);
+    border-color: rgba(225, 115, 52, 0.21);
+  }
+}
+.steps {
+  width: rem(60);
+  height: rem(48.8);
+  font-size: rem(12.8);
+  font-family: $mainFont;
+  text-align: center;
+  opacity: 100;
+  @media all and (min-width: 768px) {
+    width: rem(75);
+    height: rem(61);
+    font-size: rem(16);
+  }
+}
+.text-step {
+  color: $gunmetal;
+}
+.icon {
+  color: $dull-orange;
+  width: auto;
+  font-size: rem(20);
+  @media all and (min-width: 768px) {
+    font-size: rem(28);
+  }
+}
+.button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  width: rem(264.8);
+  @media all and (min-width: 768px) {
+    // margin-top: rem(186);
+    margin-bottom: rem(59);
+  }
+
+  &-start {
+    text-transform: uppercase;
+    background-color: $dirty-blue;
+    color: $white-two;
+    font-size: rem(16);
     text-align: center;
-    width: rem(264.8);
-    @media all and (min-width: 768px) {
-        font-size: rem(16);
-        width: rem(331);
-    }
-}
-.box-images{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: rem(30);
-    width: rem(268);
-    height: rem(73.8);
-    border: solid rem(1.6);
-    border-radius: rem(4);
-    border-color:rgba(225, 115, 52, 0.21); 
-    margin-top: rem(17.8);
-    padding: rem(15);
-    @media all and (min-width: 768px) {
-        margin-top: rem(27);
-        width: rem(325);
-        height: rem(86);
-        border: solid rem(2);
-        border-color:rgba(225, 115, 52, 0.21);
-    }
-}
-.steps{
-    width: rem(60);
-    height: rem(48.8);
-    font-size: rem(12.8);
     font-family: $mainFont;
-    text-align: center;
-    opacity: 100;
-    @media all and (min-width: 768px) {
-        width: rem(75);
-        height: rem(61);
-        font-size: rem(16);
-    }
-    
-}
-.text-step{
-    color: $gunmetal;
-}
-.icon{
-    color:$dull-orange; 
-    width: auto;
-    font-size: rem(20);
-    @media all and (min-width: 768px) {
-        font-size: rem(28);
-    } 
-}
-.button{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 30px;
-    width: rem(264.8);
-     @media all and (min-width: 768px) {
-        // margin-top: rem(186);
-        margin-bottom: rem(59);
-    } 
-    
-    &-start{
-        text-transform: uppercase;
-        background-color: $dirty-blue;
-        color: $white-two;
-        font-size: rem(16);
-        text-align: center;
-        font-family: $mainFont;
-        width: rem(129);
-        height: rem(42);
-        padding: rem(10) rem(20);
-        border-radius: rem(21);
-        margin-top: rem(38.6); 
-        text-decoration: none;
-    }
+    width: rem(129);
+    height: rem(42);
+    padding: rem(10) rem(20);
+    border-radius: rem(21);
+    margin-top: rem(38.6);
+    text-decoration: none;
+  }
 }
