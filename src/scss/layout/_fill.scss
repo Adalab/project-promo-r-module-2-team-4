@@ -2,11 +2,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-style: none;
 }
 
 .form {
   margin-bottom: rem(20);
+  border-style: none;
 
   &-legend {
     color: #404142;
