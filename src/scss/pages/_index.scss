@@ -3,7 +3,7 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     @media all and (min-width: 768px) {
        
@@ -97,7 +97,7 @@
     margin-bottom: 30px;
     width: rem(264.8);
      @media all and (min-width: 768px) {
-        margin-top: rem(186);
+        // margin-top: rem(186);
         margin-bottom: rem(59);
     } 
     
