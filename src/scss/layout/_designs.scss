@@ -1,6 +1,5 @@
 .design {
   border-style: none;
-  padding-top: 18px;
 }
 
 .colors {
@@ -12,7 +11,9 @@
   font-weight: 400;
   padding-left: 20px;
 }
-
+.palette-container {
+  padding-top: 18px;
+}
 .palete {
   display: flex;
 }
@@ -83,6 +84,6 @@
     background-color: $light-grey-blue;
   }
 }
-.oculto {
-  display: none;
-}
+// .js-hidden-palette {
+//   display: none;
+// }
