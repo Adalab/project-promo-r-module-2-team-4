@@ -1,16 +1,18 @@
 .design {
   border-style: none;
+  padding-top: 18px;
 }
 
 .colors {
   text-transform: uppercase;
   color: $gunmetal;
   font-size: 14px;
+  width: 100%;
   text-align: left;
   font-weight: 400;
-  margin-left: 39px;
-  margin-top: 22px;
+  padding-left: 20px;
 }
+
 .palete {
   display: flex;
 }
