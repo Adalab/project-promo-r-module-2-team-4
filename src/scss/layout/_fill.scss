@@ -5,7 +5,6 @@
 }
 
 .form {
-  margin-bottom: rem(20);
   border-style: none;
 
   &-legend {
@@ -16,6 +15,8 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    padding-top: rem(10);
+    padding-bottom: rem(10);
   }
   &-label {
     color: $dark-green-blue;
@@ -34,6 +35,16 @@
   &-title {
     margin-left: rem(10);
     margin-right: rem(155);
+
+    &--share {
+      margin-left: rem(10);
+      margin-right: rem(135);
+    }
+
+     &--design {
+      margin-left: rem(10);
+      margin-right: rem(170);
+    }
   }
   &-input {
     width: rem(281);
@@ -64,9 +75,15 @@
     width: rem(280);
     height: rem(1);
     background-color: $silver;
-    margin-top: rem(30);
+    margin-top: rem(0);
   }
+
+    &-nodes {
+    color: $dull-orange;
+    width: rem(21);
+    height: rem(18);
+  } 
 }
-// .hidden {
-//   display: none;
-// }
+.hidden {
+  display: none;
+ }

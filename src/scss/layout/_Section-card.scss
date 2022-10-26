@@ -3,9 +3,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
   &__button {
     background: none;
-    border: solid 1px $white;
+    border: solid 1px $white-two;
     color: $gunmetal;
     margin: 38px 0 20px 0;
     font-size: rem(12);
@@ -14,8 +15,8 @@
     border-radius: 15px;
     transform: translateX(-115%);
     text-transform: uppercase;
-    cursor: pointer;
-  }
+    cursor: pointer;}
+
   &__article {
     background-color: $white-two;
     padding: 21px 0 12px 0;
@@ -25,27 +26,29 @@
 
     &--data {
       position: relative;
-      border-left: solid 5px $black;
+      border-left: solid 5px $dirty-blue;
       .name {
         color: $dark-green-blue;
         font-family: $cardFont;
         font-size: rem(18);
-        font-weight: bold;
+        font-weight: 700;
         text-transform: capitalize;
         margin: 0 14px 4px 15px;
         line-height: rem(20);
       }
       .text {
-        color: $black;
+        color: $gunmetal;
         font-family: $cardFont;
         font-size: rem(16);
         margin: 0 14px 4px 15px;
         line-height: rem(20);
+        font-weight: 400;
       }
     }
     &--photo {
       background: url(https://png.pngtree.com/png-clipart/20210425/original/pngtree-sit-down-pet-dog-waleski-png-image_6249005.jpg) top
         no-repeat;
+      background-size: cover;
       height: 200px;
       margin: 10px 0;
     }
