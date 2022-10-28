@@ -73,10 +73,16 @@
     border: solid 1px $hospital-green;
   }
   &-line {
+    margin-left: rem(20);
     width: rem(280);
     height: rem(1);
     background-color: $silver;
     margin-top: rem(0);
+    @media (min-width:768px){ 
+      margin-left:rem(40);
+      width: rem(329);
+    }
+
   }
 
   &-nodes {

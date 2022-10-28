@@ -24,3 +24,9 @@
       }
   }
 }
+@media  (min-width: 1024px){ 
+  .main-container {
+    grid-template-columns: 1fr 1.5fr;
+    
+  }
+}

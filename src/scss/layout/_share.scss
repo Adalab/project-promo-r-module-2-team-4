@@ -48,7 +48,12 @@
 }
 .line {
   width: rem(280);
+  margin-left: rem(20);
   height: rem(1);
   background-color: $silver;
+  @media (min-width:768px){ 
+    margin-left:rem(40);
+    width: rem(329);
+  }
   // margin-top: rem(30);
 }

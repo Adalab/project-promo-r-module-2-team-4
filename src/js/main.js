@@ -3,38 +3,17 @@
 //Función para que al hacer <click> en las flechas el form
 //aparezca o se oculte
 
-function showForm(arrowUp, arrowDown) {}
+function showForm(arrowUp, content) {
+  arrowUp.classList.toggle("hidden");
+  content.classList.toggle("hidden");
+}
 
 function hideForm(arrowUp, arrowDown) {}
 
 //Función manejadora
-function handleClick(event) {
+function handleClickFill(e) {
   e.preventDefault();
-
-  if (arrowUpFill.classList.contains("hidden")) {
-    arrowUpFill.classList.remove("hidden");
-  } else {
-    arrowUpFill.classList.add("hidden");
-    arrowDownFill.classList.remove("hidden");
-  }
+  showForm(arrowUpFill, formContainerFill);
 }
 
-arrowUpFill.addEventListener("click", (e) => {
-  e.preventDefault();
-  if (arrowUpFill.classList.contains("hidden")) {
-    arrowUpFill.classList.remove("hidden");
-  } else {
-    arrowUpFill.classList.add("hidden");
-    arrowDownFill.classList.remove("hidden");
-  }
-});
-arrowDownFill.addEventListener("click", (e) => {
-  e.preventDefault();
-  if (arrowDownFill.classList.contains("hidden") && paleteColors.classList.contains("hidden")) {
-    arrowDownFill.classList.remove("hidden");
-    paleteColors.classList.remove("hidden");
-  } else {
-    arrowDownFill.classList.add("hidden");
-    arrowUpFill.classList.remove("hidden");
-  }
-});
+arrowUpFill.addEventListener("click", handleClickFill);

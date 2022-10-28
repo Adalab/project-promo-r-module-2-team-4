@@ -11,6 +11,10 @@
     margin-top: rem(20);
     border-radius: rem(6);
   }
+  @media (min-width: 1024px) {
+    width: rem(585);
+    
+  }
 
   &__button {
     background: none;
