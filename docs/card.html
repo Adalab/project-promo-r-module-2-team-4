@@ -1,46 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/main.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/bd9669bb11.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <title>Awesome profile-cards</title>
+  </head>
 
-<body>
-    </head>
+  <body>
     <header class="header">
-        <img  class= "header-image" src="./assets/images/cards.svg">
+      <img class="header-image" src="./assets/images/cards.svg" />
     </header>
-    <main>
-        <section>
-            <button> Reset </button>
-            <article>
-                <div>
-                    <h1> Nombre y apellido </h1>
-                    <h2>front end </h2>
-                </div>
-                <img src="" alt="">
-                <i class="fa-solid fa-mobile-screen-button"></i>
-                <i class="fa-regular fa-envelope"></i>
-                <i class="fa-brands fa-linkedin-in"></i>
-                <i class="fa-brands fa-github-alt"></i>
+    <main class="main-container">
+      <section>
+        <section class="mainCreate__card card">
+          <button class="card__button" title="Reset" name="Reset" type="button"><i class="far fa-trash-alt"></i> Reset</button>
+          <article class="card__article">
+              <div class="card__article--data">
+                  <h2 class="name">Nombre apellido</h2>
+                  <p class="text">Front-end developer</p>
+              </div>
+              <div class="card__article--photo">
 
-            </article>
+              </div> 
+              <ul class="card__article--links">
+                  <li><i class="fa-solid fa-mobile-screen-button icon"></i></li>
+                  <li><i class="fa-regular fa-envelope icon"></i></li>
+                  <li><i class="fa-brands fa-linkedin-in icon"></i></li>
+                  <li><i class="fa-brands fa-github-alt icon"></i></li>
+              </ul>
+          </article>
         </section>
+      </section>
 
-      
+      <section class="section-form">
+        <form action="https://formspree.io/f/meqdlvpw" method="POST">
+          <fieldset class="design">
+            <legend class="form-legend">
+              <span class="form-keyboard"><i class="fa-solid fa-object-ungroup"></i></span>
+
+              <span class="form-title--design">diseña </span>
+              <span class="js-design-down form-arrow"><i class="fa-solid fa-chevron-down"></i></span>
+              <span class="js-design-up hidden form-arrow"><i class="fa-solid fa-chevron-up"></i></span>
+            </legend>
+            <div class="palette-container js-hidden-palette">
+              <div class="colorpalete">
+                <h2 class="colors">colores</h2>
+                <input type="radio" name="palete" class="colors1" id="paymentmethod1" />
+                <section class="palete">
+                  <div class="colors1__green"></div>
+                  <div class="colors1__blueD"></div>
+                  <div class="colors1__blueL"></div>
+                </section>
+              </div>
+
+              <div class="colorpalete">
+                <input type="radio" name="palete" class="colors2" id="paymentmethod2" />
+                <section class="palete">
+                  <div class="colors2__blood"></div>
+                  <div class="colors2__rusty"></div>
+                  <div class="colors2__tomato"></div>
+                </section>
+              </div>
+
+              <div class="colorpalete">
+                <input type="radio" name="palete" class="colosr3" id="paymentmethod3" />
+                <section class="palete">
+                  <div class="colors3__slate"></div>
+                  <div class="colors3__orange"></div>
+                  <div class="colors3__greyBlue"></div>
+                </section>
+              </div>
+            </div>
+
+            <div class="line"></div>
+          </fieldset>
+
+          <fieldset class="form">
+            <legend class="form-legend">
+              <span class="form-keyboard"><i class="fa-regular fa-keyboard"></i></span>
+              <span class="form-title">rellena </span>
+              <span class="form-arrow js-fill-down"><i class="fa-solid fa-chevron-down"></i></span>
+              <span class="form-arrow  js-fill-up"><i class="fa-solid fa-chevron-up"></i></span>
+            </legend>
+            <div class="form-container js-hidden-fill">
+              <label class="form-label" for="completeName">Nombre completo</label>
+              <input class="form-input" type="text" placeholder="Ej: Maricarmen" id="completeName" name="completeName" />
+
+              <label class="form-label" for="position">Puesto</label>
+              <input class="form-input" type="text" placeholder="Ej: Front-end unicorn" id="position" name="position" />
+
+              <label class="form-label" for="addImage">Imagen de perfil</label>
+              <div class="form-add-image">
+                <button class="form-button">Añadir imagen</button>
+                <div class="form-checkbox"></div>
+              </div>
+
+              <label class="form-label" for="email">Email</label>
+              <input class="form-input" type="email" placeholder="Ej: maricarmen@gmail.com" id="email" name="email" />
+
+              <label class="form-label" for="phone">Teléfono</label>
+              <input class="form-input" type="tel" placeholder="Ej:66687879" id="phone" name="phone" />
+
+              <label class="form-label" for="linkedin">LinkedIn</label>
+              <input class="form-input" type="text" placeholder="Ej: url/linkedin" id="linkedin" name="linkedin" />
+
+              <label class="form-label" for="github">Github</label>
+              <input class="form-input" type="text" placeholder="Ej: url/github" id="github" name="github" />
+            </div>
+            <div class="line"></div>
+          </fieldset>
+          <fieldset class="form">
+            <legend class="form-legend">
+              <span class="form-nodes"><i class="fa-sharp fa-solid fa-share-nodes"></i></span>
+              <span class="form-title--share">Comparte </span>
+              <span class="js-share-down form-arrow"><i class="fa-solid fa-chevron-down"></i></span>
+              <span class="js-share-up hidden form-arrow"><i class="fa-solid fa-chevron-up"></i></span>
+            </legend>
+            <div class="share-div js-hidden-share">
+              <button class="create-btn"><i class="fa-solid fa-address-card"></i>Crear tarjeta</button>
+            </div>
+            <div class="line"></div>
+
+            <div class="card-created js-card-created">
+              <h3 class="card-created-title js-created-title">La tarjeta ha sido creada:</h3>
+              <p class=" card-created-url js-link-share">https://awesome-profile-card.com?id=A456DF0001</p>
+            </div>
+            <div class="share-twitter">
+              <a class=" share-twitter-tweet twitter-share-button" href="https://twitter.com/intent/tweet" target="_blank">
+                  <i class="fa-brands fa-twitter twitter-share-button-icon"></i>
+                  Compartir en twitter
+              </a>
+          </div>
+              <div class="line"></div>
+            </div>
+          </fieldset>
+
+        </form>
+      </section>
     </main>
- 
 
     <footer class="footer">
         <small class="footer-copy">Awesome profile-cards &copy; 2022 </small>
         <img  class="footer-img" src="./assets/images/adalab.png" alt="adalab" title="Logo de Adalab" />
       </footer>
     <script src="./assets/js/main.js"></script>
-    
-</body>
-
+  </body>
 </html>
