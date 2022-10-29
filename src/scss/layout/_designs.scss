@@ -10,14 +10,14 @@
   font-weight: 400;
   width: 100%;
   padding-left: rem(20);
-  @media  (min-width: 768px){ 
+  @media (min-width: 768px) {
     padding-left: rem(60);
   }
 }
 .palette-container {
   padding-top: rem(18);
   padding-right: rem(20);
-  @media  (min-width: 768px){ 
+  @media (min-width: 768px) {
     padding-right: rem(50);
   }
 }
@@ -91,7 +91,12 @@
     background-color: $light-grey-blue;
   }
 }
-
+.line-design {
+  margin-left: rem(20);
+  width: rem(280);
+  height: rem(1);
+  background-color: $silver;
+}
 .hidden {
   display: none;
 }

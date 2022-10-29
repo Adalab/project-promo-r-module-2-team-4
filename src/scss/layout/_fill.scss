@@ -7,6 +7,10 @@
 
 .form {
   border-style: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 
   &-legend {
     color: #404142;
@@ -78,11 +82,10 @@
     height: rem(1);
     background-color: $silver;
     margin-top: rem(0);
-    @media (min-width:768px){ 
-      margin-left:rem(40);
+    @media (min-width: 768px) {
+      margin-left: rem(40);
       width: rem(329);
     }
-
   }
 
   &-nodes {
