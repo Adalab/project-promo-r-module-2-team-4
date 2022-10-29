@@ -111,7 +111,7 @@
   margin-top: rem(38.6);
   text-decoration: none;
 
-  @media all and (min-width: 768px) {
+  @media all and (min-width: 768px) and (min-height: 768px){
     position: relative;
     top: rem(86);
   }
