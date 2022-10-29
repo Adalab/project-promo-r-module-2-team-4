@@ -17,9 +17,6 @@
 .palette-container {
   padding-top: rem(18);
   padding-right: rem(20);
-  @media (min-width: 768px) {
-    padding-right: rem(50);
-  }
 }
 .palete {
   display: flex;
