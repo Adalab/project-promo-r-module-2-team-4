@@ -1,40 +1,16 @@
 "use strict";
 
-//Función para que al hacer <click> en las flechas el form
-//aparezca o se oculte
-
-function showForm(arrowUp, content) {
-  arrowUp.classList.toggle("hidden");
-  content.classList.toggle("hidden");
+function handleOnClick(up, down, container) {
+  up.classList.toggle("hidden");
+  down.classList.toggle("hidden");
+  container.classList.toggle("hidden");
 }
 
-function hideForm(arrowUp, arrowDown) {}
+arrowUpDesign.addEventListener("click", () => handleOnClick(arrowUpDesign, arrowDownDesign, formContainerDesign));
+arrowDownDesign.addEventListener("click", () => handleOnClick(arrowUpDesign, arrowDownDesign, formContainerDesign));
 
-//Función manejadora
-function handleClickFill(e) {
-  e.preventDefault();
-  showForm(arrowUpFill, formContainerFill);
-}
+arrowUpFill.addEventListener("click", () => handleOnClick(arrowUpFill, arrowDownFill, formContainerFill));
+arrowDownFill.addEventListener("click", () => handleOnClick(arrowUpFill, arrowDownFill, formContainerFill));
 
-arrowUpFill.addEventListener("click", handleClickFill);
-
-// Formulario parte diseña
-
-function arrowDown() {
-  arrowDownDesign.classList.add("hidden");
-  formContainerDesign.classList.add("hidden");
-  console.log(`click arrow down`);
-}
-function arrowUp() {
-  arrowUpDesign.classList.remove("hidden");
-  formContainerDesign.classList.remove("hidden");
-  formContainerDesign.classList.add("hidden");
-}
-// Ejecutamos la funcion manejadora
-function handleClickDesing(ev) {
-  ev.preventDefault();
-  arrowDown();
-  arrowUp();
-}
-// Evento
-arrowUpDesign.addEventListener("click", handleClickDesing);
+arrowUpShare.addEventListener("click", () => handleOnClick(arrowUpShare, arrowDownShare, formContainerShare));
+arrowDownShare.addEventListener("click", () => handleOnClick(arrowUpShare, arrowDownShare, formContainerShare));
