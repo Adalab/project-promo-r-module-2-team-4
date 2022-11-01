@@ -1,40 +1,16 @@
 "use strict";
 
-//Función para que al hacer <click> en las flechas el form
-//aparezca o se oculte
-
-function showForm(arrowUp, arrowDown) {}
-
-function hideForm(arrowUp, arrowDown) {}
-
-//Función manejadora
-function handleClick(event) {
-  e.preventDefault();
-
-  if (arrowUpFill.classList.contains("hidden")) {
-    arrowUpFill.classList.remove("hidden");
-  } else {
-    arrowUpFill.classList.add("hidden");
-    arrowDownFill.classList.remove("hidden");
-  }
+function handleOnClick(up, down, container) {
+  up.classList.toggle("hidden");
+  down.classList.toggle("hidden");
+  container.classList.toggle("hidden");
 }
 
-arrowUpFill.addEventListener("click", (e) => {
-  e.preventDefault();
-  if (arrowUpFill.classList.contains("hidden")) {
-    arrowUpFill.classList.remove("hidden");
-  } else {
-    arrowUpFill.classList.add("hidden");
-    arrowDownFill.classList.remove("hidden");
-  }
-});
-arrowDownFill.addEventListener("click", (e) => {
-  e.preventDefault();
-  if (arrowDownFill.classList.contains("hidden") && paleteColors.classList.contains("hidden")) {
-    arrowDownFill.classList.remove("hidden");
-    paleteColors.classList.remove("hidden");
-  } else {
-    arrowDownFill.classList.add("hidden");
-    arrowUpFill.classList.remove("hidden");
-  }
-});
+arrowUpDesign.addEventListener("click", () => handleOnClick(arrowUpDesign, arrowDownDesign, formContainerDesign));
+arrowDownDesign.addEventListener("click", () => handleOnClick(arrowUpDesign, arrowDownDesign, formContainerDesign));
+
+arrowUpFill.addEventListener("click", () => handleOnClick(arrowUpFill, arrowDownFill, formContainerFill));
+arrowDownFill.addEventListener("click", () => handleOnClick(arrowUpFill, arrowDownFill, formContainerFill));
+
+arrowUpShare.addEventListener("click", () => handleOnClick(arrowUpShare, arrowDownShare, formContainerShare));
+arrowDownShare.addEventListener("click", () => handleOnClick(arrowUpShare, arrowDownShare, formContainerShare));

@@ -50,5 +50,52 @@
   width: rem(280);
   height: rem(1);
   background-color: $silver;
-  // margin-top: rem(30);
+}
+
+.card-created {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-created-title {
+  margin-top: rem(20);
+  font-family: $mainFont;
+  font-weight: 600;
+  font-size: rem(18);
+  height: rem(24);
+  color: $gunmetal;
+}
+
+.card-created-url {
+  margin: 5px 13px 0 15px;
+  text-decoration: none;
+  font-family: $mainFont;
+  font-size: 12px;
+  font-weight: 600;
+  color: $dull-orange;
+}
+
+.share-twitter {
+  margin: 10px 0 30px 0;
+  width: rem(181);
+  height: rem(30);
+  background-color: #00a0f5;
+  border-radius: rem(3);
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.share-twitter-tweet {
+  color: white;
+  text-decoration: none;
+  font-family: $mainFont;
+  font-size: rem(14);
+}
+
+.share-twitter-icon {
+  width: rem(18);
 }

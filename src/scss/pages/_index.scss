@@ -34,7 +34,7 @@
 .subtitle-create {
   font-size: rem(12.8);
   color: $dark-green-blue;
-  font-family: $mainFont;
+  font-weight: 300;
   text-align: center;
   width: rem(264.8);
   @media all and (min-width: 768px) {
@@ -78,7 +78,7 @@
 .text-step {
   color: $gunmetal;
 }
-.icon {
+.icon-begin {
   color: $dull-orange;
   width: auto;
   font-size: rem(20);
@@ -111,7 +111,7 @@
   margin-top: rem(38.6);
   text-decoration: none;
 
-  @media all and (min-width: 768px) {
+  @media all and (min-width: 768px) and (min-height: 768px){
     position: relative;
     top: rem(86);
   }

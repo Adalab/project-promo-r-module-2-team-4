@@ -1,0 +1,19 @@
+.landing-header {
+  background-color: $white-four;
+  display: flex;
+  justify-content: center;
+  padding-top: rem(150);
+  height: 30vh;
+  @media (min-width: 768px) {
+    height: 45vh;
+    padding: rem(370) rem(174) 0 rem(175);
+  }
+}
+
+.image {
+  width: rem(250);
+  @media (min-width: 768px) {
+    width: rem(419);
+    height: rem(105);
+  }
+}

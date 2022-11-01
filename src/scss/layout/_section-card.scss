@@ -8,8 +8,11 @@
   @media (min-width: 768px) {
     width: rem(329);
     height: rem(812);
-    margin-top: rem(20);
+    margin: rem(20) 0 rem(20) 0;
     border-radius: rem(6);
+  }
+  @media (min-width: 1024px) {
+    width: rem(585);
   }
 
   &__button {
@@ -57,9 +60,10 @@
       }
     }
     &--photo {
-      background: url(https://png.pngtree.com/png-clipart/20210425/original/pngtree-sit-down-pet-dog-waleski-png-image_6249005.jpg) top
-        no-repeat;
+      background: url("../images/giphy.harry.gif");
+      background-position: center;
       background-size: cover;
+      background-repeat: no-repeat;
       height: 200px;
       margin: 10px 0;
     }
