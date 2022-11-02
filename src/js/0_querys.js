@@ -34,3 +34,9 @@ const previewLinkedin = document.querySelector(".js-preview-linkedin");
 const githubInput = document.querySelector(".js-input-github");
 const previewGithub = document.querySelector(".js-preview-github");
 const form = document.querySelector(".js-form");
+
+//variables share
+
+const createButton = document.querySelector('.js-create-button');
+const sectionCreatedCard= document.querySelector('.js-created-success');
+

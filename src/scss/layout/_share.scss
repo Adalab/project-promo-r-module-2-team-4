@@ -45,11 +45,21 @@
   font-size: rem(18);
   font-family: $mainFont;
   margin-bottom: rem(30);
+  &-disabled {
+    background-color: $white;
+  }
 }
 .line {
   width: rem(280);
   height: rem(1);
   background-color: $silver;
+}
+
+.card-created-success {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-created {
@@ -85,6 +95,7 @@
   border-radius: rem(3);
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
