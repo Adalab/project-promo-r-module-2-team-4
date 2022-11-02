@@ -6,8 +6,8 @@
   .preview-header {
     border-color: $dirty-blue;
   }
-  .preview-icon {
-    border-color: $hospital-green;
+  .icon {
+    border: solid 2px $hospital-green;
     color: $dark-green-blue;
   }
 }
@@ -19,8 +19,8 @@
   .preview-header {
     border-color: $rusty-red;
   }
-  .preview-icon {
-    border-color: $tomato;
+  .icon {
+    border: solid 2px $tomato;
     color: $dried-blood;
   }
 }
@@ -32,8 +32,9 @@
   .preview-header {
     border-color: $faded-orange;
   }
-  .preview-icon {
-    border-color: $light-grey-blue;
+  .icon {
+    border: solid 2px $light-grey-blue;
     color: $slate;
   }
 }
+//los estilos de los iconos estaban aplicados sobre la clase preview-icon y había que aplicarlo sobre el icon.

@@ -42,7 +42,7 @@
       position: relative;
       border-left: solid 5px $dirty-blue;
       .name {
-        color: $dark-green-blue;
+        //color: $dark-green-blue;
         font-family: $cardFont;
         font-size: rem(18);
         font-weight: 700;
@@ -73,7 +73,7 @@
 
       .icon {
         color: $dark-green-blue;
-        border: solid 2px $hospital-green;
+        //border: solid 2px $hospital-green;
         border-radius: 16px;
         margin: 0 10px 0 0;
         padding-top: rem(5);
@@ -85,3 +85,4 @@
     }
   }
 }
+//los dos comentados es porque machacaban los otros que son mas genéricos. Estos eran mas directos.
