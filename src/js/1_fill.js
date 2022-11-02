@@ -81,44 +81,54 @@ let job = '';
 let email = '';
 
 
-nameInput.addEventListener('input', () => {
-  name = nameInput.value;
-  updatePreview();
-});
+// nameInput.addEventListener('input', () => {
+//   name = nameInput.value;
+//   updatePreview();
+// });
 
-jobInput.addEventListener('input', () => {
-  job = jobInput.value;
-  updatePreview();
-});
-emailInput.addEventListener('input', () => {
-  email = emailInput.value;
-  updatePreview();
-});
+// jobInput.addEventListener('input', () => {
+//   job = jobInput.value;
+//   updatePreview();
+// });
+// emailInput.addEventListener('input', () => {
+//   email = emailInput.value;
+//   updatePreview();
+// });
 
 
-//Query form
-const form = document.querySelector(".js-form");
+
 
 //Listening in all form. Se le pone un evento de tipu input que empiece a funcionar cada vez que se haga click en un input. Se está escuchando todo el formulario, así que hay que saber en qué input está escribiendo y qué valor ha escrito.
+
 form.addEventListener('input', (event) => {
   const elementName = event.target.name; //Este event.target está diciendo sobre qué input escribe la usuaria. Name es el atributo gancho para conectar los inputs desde html con esto.
+
   const value = event.target.value; //Donde está escribiendo la usuaria, todo lo que escriba hasta ahora se guarda aquí. Nosotros a su vez lo guardamos en la variable value.
   
   if(elementName === 'name') { //Si la usuaria está escribiendo en el input que tiene name: 'name';
-    data.name = value; //guarda lo que está escribiendo en este input dentro de la variable value. Este value se crea solo al rellenar el input.
-  } else if (elementName === 'job') {
-    data.job = value;
-  } else if (elementName === 'email') {
-    data.email = value;
-  } else if (elementName === "phone") {
-    data.phone = value;
-  } else if (elementName === 'linkedin') {
-    data.linkedin = value;
-  } else if (elementName === 'github') {
-    data.github = value;
+    data[elementName] = value; //guarda lo que está escribiendo en este input dentro de la variable value. Este value se crea solo al rellenar el input.
+
+    //Si lo hacemos con [elementName] ya no nos hace falta esto de abajo:
+//   } else if (elementName === 'job') {
+//     data.job = value;
+//   } else if (elementName === 'email') {
+//     data.email = value;
+//   } else if (elementName === "phone") {
+//     data.phone = value;
+//   } else if (elementName === 'linkedin') {
+//     data.linkedin = value;
+//   } else if (elementName === 'github') {
+//     data.github = value;
   }
   
   
   
   updatePreview();
 })
+
+// data.job = 'hola';
+// data['job'] = 'adios';
+
+//Es lo mismo que:
+// const propertyName = 'job';
+// console.log(data[propertyName]);
