@@ -1,0 +1,39 @@
+.colorsPalette-1 {
+  .name {
+    color: $dark-green-blue;
+  }
+
+  .preview-header {
+    border-color: $dirty-blue;
+  }
+  .preview-icon {
+    border-color: $hospital-green;
+    color: $dark-green-blue;
+  }
+}
+.colorsPalette-2 {
+  .name {
+    color: $dried-blood;
+  }
+
+  .preview-header {
+    border-color: $rusty-red;
+  }
+  .preview-icon {
+    border-color: $tomato;
+    color: $dried-blood;
+  }
+}
+.colorsPalette-3 {
+  .name {
+    color: $slate;
+  }
+
+  .preview-header {
+    border-color: $faded-orange;
+  }
+  .preview-icon {
+    border-color: $light-grey-blue;
+    color: $slate;
+  }
+}

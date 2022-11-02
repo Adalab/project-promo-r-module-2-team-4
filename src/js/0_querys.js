@@ -3,6 +3,10 @@
 const arrowUpDesign = document.querySelector(".js-design-up");
 const arrowDownDesign = document.querySelector(".js-design-down");
 const formContainerDesign = document.querySelector(".js-design");
+const paletteOne = document.querySelector(".js-paletteOne");
+const paletteTwo = document.querySelector(".js-paletteTwo");
+const paletteThree = document.querySelector(".js-paletteThree");
+const previewCard = document.querySelector(".js-preview");
 
 //variables Section Fill
 const arrowUpFill = document.querySelector(".js-fill-up");
