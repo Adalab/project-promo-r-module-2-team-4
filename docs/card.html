@@ -54,7 +54,7 @@
               <div class="colorpalete">
                 <h2 class="colors">colores</h2>
                 <input type="radio" checked="true" name="palete" class="colors1 js-paletteOne" value="palette-1" id="paymentmethod1" />
-                <section class="palete ">
+                <section class="palete">
                   <div class="colors1__green"></div>
                   <div class="colors1__blueD"></div>
                   <div class="colors1__blueL"></div>
@@ -72,7 +72,7 @@
 
               <div class="colorpalete">
                 <input type="radio" name="palete" class="colosr3 js-paletteThree" value="palette-3" id="paymentmethod3" />
-                <section class="palete ">
+                <section class="palete">
                   <div class="colors3__slate"></div>
                   <div class="colors3__orange"></div>
                   <div class="colors3__greyBlue"></div>
@@ -80,8 +80,9 @@
               </div>
             </div>
 
-            <div class="line-design"></div>
+            <div class="line"></div>
           </fieldset>
+
           <fieldset class="form">
             <legend class="form-legend">
               <span class="form-keyboard"><i class="fa-regular fa-keyboard"></i></span>
@@ -91,10 +92,10 @@
             </legend>
             <div class="form-container hidden js-fill">
               <label class="form-label" for="completeName">Nombre completo</label>
-              <input class="form-input js-input-name" type="text" placeholder="Ej: Maricarmen" id="completeName" name="completeName" />
+              <input class="form-input js-input-name" type="text" placeholder="Ej: Maricarmen" id="completeName" name="completeName" required />
 
               <label class="form-label" for="position">Puesto</label>
-              <input class="form-input js-input-job" type="text" placeholder="Ej: Front-end unicorn" id="position" name="position" />
+              <input class="form-input js-input-job" type="text" placeholder="Ej: Front-end unicorn" id="position" name="position" required />
 
               <!-- REPASAR -->
               <label class="form-label" for>Imagen de perfil</label>
@@ -102,7 +103,7 @@
 
               <div class="form-add-image">
                 <label class="form-button" for="addImage">Añadir imagen</label>
-                <input type="file" id="addImage" name="addImage" accept=".png, .svg, .webp, .jpg, .jpeg, .jfif, .pjpeg, .pjp, .gif" hidden/> 
+                <input type="file" id="addImage" name="addImage" accept="image/*" hidden required />
                 <div class="form-checkbox"></div>
               </div>
 
@@ -113,7 +114,13 @@
               <input class="form-input js-input-phone" type="tel" placeholder="Ej:66687879" id="phone" name="phone" />
 
               <label class="form-label" for="linkedin">LinkedIn</label>
-              <input class="form-input js-input-linkedin" type="text" placeholder="Ej: https://www.linkedin.com/in/mari-carmen/" id="linkedin" name="linkedin" />
+              <input
+                class="form-input js-input-linkedin"
+                type="text"
+                placeholder="Ej: https://www.linkedin.com/in/mari-carmen/"
+                id="linkedin"
+                name="linkedin"
+              />
 
               <label class="form-label" for="github">Github</label>
               <input class="form-input js-input-github" type="text" placeholder="Ej: maricarmen" id="github" name="github" />
