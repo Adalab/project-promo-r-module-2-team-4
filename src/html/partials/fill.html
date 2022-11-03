@@ -7,10 +7,10 @@
   </legend>
   <div class="form-container hidden js-fill">
     <label class="form-label" for="completeName">Nombre completo</label>
-    <input class="form-input js-input-name" type="text" placeholder="Ej: Maricarmen" id="completeName" name="completeName" />
+    <input class="form-input js-input-name" type="text" placeholder="Ej: Maricarmen" id="completeName" name="completeName" required />
 
     <label class="form-label" for="position">Puesto</label>
-    <input class="form-input js-input-job" type="text" placeholder="Ej: Front-end unicorn" id="position" name="position" />
+    <input class="form-input js-input-job" type="text" placeholder="Ej: Front-end unicorn" id="position" name="position" required />
 
     <!-- REPASAR -->
     <label class="form-label" for>Imagen de perfil</label>
@@ -18,8 +18,8 @@
 
     <div class="form-add-image">
       <label class="form-button" for="addImage">Añadir imagen</label>
-      <input type="file" id="addImage" name="addImage" accept=".png, .svg, .webp, .jpg, .jpeg, .jfif, .pjpeg, .pjp, .gif" hidden/> 
-      <div class="form-checkbox"></div>
+      <input class="js__profile-upload-btn" type="file" id="addImage" name="addImage" accept="image/*" hidden required />
+      <div class="form-checkbox js__profile-preview"></div>
     </div>
 
     <label class="form-label" for="email">Email</label>
@@ -29,7 +29,13 @@
     <input class="form-input js-input-phone" type="tel" placeholder="Ej:66687879" id="phone" name="phone" />
 
     <label class="form-label" for="linkedin">LinkedIn</label>
-    <input class="form-input js-input-linkedin" type="text" placeholder="Ej: https://www.linkedin.com/in/mari-carmen/" id="linkedin" name="linkedin" />
+    <input
+      class="form-input js-input-linkedin"
+      type="text"
+      placeholder="Ej: https://www.linkedin.com/in/mari-carmen/"
+      id="linkedin"
+      name="linkedin"
+    />
 
     <label class="form-label" for="github">Github</label>
     <input class="form-input js-input-github" type="text" placeholder="Ej: maricarmen" id="github" name="github" />
