@@ -1,17 +1,19 @@
+"use strict";
+
 function resetInput() {
     nameInput.value = '';
     jobInput.value = '';
     emailInput.value= '';
     phoneInput.value = '';
     linkedinInput.value = '';
-    github.Input.value = ''; 
+    githubInput.value = ''; 
 }
 
-function handleclikreset (event) {
+function handleClickReset (event) {
     event.preventDefault();
     resetInput ();
     updatePreview();
   }
 
-  resetBtn.addEventListener('click', handleclikreset);
+  resetBtn.addEventListener('click', handleClickReset);
   
