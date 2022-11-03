@@ -34,7 +34,7 @@ function updatePreview() {
   if (data.phone === '') {
     previewPhone.href = '';
   } else {
-    previewPhone.innerHTML = data.phone;
+    previewPhone.innerHTML = `tel:${data.phone}`;
   }
   if (data.email === '') {
     previewEmail.href = '';
