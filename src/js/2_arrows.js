@@ -3,6 +3,10 @@
 function designArrow(arrowUp, container, arrowDown) {
   formContainerFill.classList.add("hidden");
   formContainerShare.classList.add("hidden");
+  arrowUpFill.classList.add("hidden");
+  arrowUpShare.classList.add("hidden");
+  arrowDownFill.classList.remove("hidden");
+  arrowDownShare.classList.remove("hidden");
   if (container.classList.contains("hidden")) {
     arrowUp.classList.remove("hidden");
     container.classList.remove("hidden");
@@ -18,6 +22,10 @@ function designArrow(arrowUp, container, arrowDown) {
 function fillArrow(arrowUp, container, arrowDown) {
   formContainerDesign.classList.add("hidden");
   formContainerShare.classList.add("hidden");
+  arrowUpDesign.classList.add("hidden");
+  arrowUpShare.classList.add("hidden");
+  arrowDownDesign.classList.remove("hidden");
+  arrowDownShare.classList.remove("hidden");
   if (container.classList.contains("hidden")) {
     arrowUp.classList.remove("hidden");
     container.classList.remove("hidden");
@@ -32,6 +40,10 @@ function fillArrow(arrowUp, container, arrowDown) {
 function shareArrow(arrowUp, container, arrowDown) {
   formContainerDesign.classList.add("hidden");
   formContainerFill.classList.add("hidden");
+  arrowUpFill.classList.add("hidden");
+  arrowUpDesign.classList.add("hidden");
+  arrowDownFill.classList.remove("hidden");
+  arrowDownDesign.classList.remove("hidden");
 
   if (container.classList.contains("hidden")) {
     arrowUp.classList.remove("hidden");
