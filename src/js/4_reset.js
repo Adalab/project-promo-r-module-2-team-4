@@ -13,6 +13,8 @@ function handleClickReset (event) {
     event.preventDefault();
     resetInput ();
     updatePreview();
+    disableSectionShare();
+    enableCreateBtn();
   }
 
   resetBtn.addEventListener('click', handleClickReset);
