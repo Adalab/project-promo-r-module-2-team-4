@@ -7,16 +7,15 @@ function resetInput() {
     phoneInput.value = '';
     linkedinInput.value = '';
     githubInput.value = ''; 
-    imgInput.value ='';
 }
 
 function handleClickReset (event) {
     event.preventDefault();
-    resetInput ();
+    resetInput();
     updatePreview();
     disableSectionShare();
     enableCreateBtn();
   }
 
-  resetBtn.addEventListener('click', handleClickReset);
+  resetBtn.addEventListener('click',handleClickReset);
   
