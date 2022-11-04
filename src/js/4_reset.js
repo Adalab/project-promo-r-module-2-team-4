@@ -7,6 +7,7 @@ function resetInput() {
     phoneInput.value = '';
     linkedinInput.value = '';
     githubInput.value = ''; 
+    imgInput.value ='';
 }
 
 function handleClickReset (event) {
