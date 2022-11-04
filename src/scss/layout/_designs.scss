@@ -35,6 +35,7 @@
 }
 
 .colors1 {
+  display: flex;
   &__green {
     width: rem(30);
     height: rem(25);
@@ -88,9 +89,4 @@
     background-color: $light-grey-blue;
   }
 }
-.line-design {
-  margin-left: rem(20);
-  width: rem(280);
-  height: rem(1);
-  background-color: $silver;
-}
+

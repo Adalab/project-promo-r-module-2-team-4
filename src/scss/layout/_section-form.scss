@@ -5,6 +5,10 @@
   align-items: center;
   gap: rem(10);
   margin-bottom: rem(30);
+
+  .main-container{
+    height:20vh;
+  }
  
 }
 
@@ -14,6 +18,8 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       justify-items: center;
+      min-height: 78vh;
+      
 
       .section-card {
         grid-row: 2; 
