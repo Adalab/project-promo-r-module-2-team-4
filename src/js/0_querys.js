@@ -40,3 +40,5 @@ const form = document.querySelector(".js-form");
 const createButton = document.querySelector('.js-create-button');
 const sectionCreatedCard= document.querySelector('.js-created-success');
 
+//variable reset
+const resetBtn = document.querySelector('.js-reset-btn');
