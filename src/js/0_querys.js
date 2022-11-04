@@ -1,6 +1,8 @@
 "use strict";
 // Varible para evento de las flechas
-const arrow = document.querySelector(".js-event");
+const arrowDesign = document.querySelector(".js-event");
+const arrowFill = document.querySelector(".js-eventFill");
+const arrowShare = document.querySelector(".js-eventShare");
 
 //variables Section Design
 const arrowUpDesign = document.querySelector(".js-design-up");
