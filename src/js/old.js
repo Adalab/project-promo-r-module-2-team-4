@@ -1,3 +1,4 @@
+"use strict";
 // form.addEventListener('input', (e) => {
 //     const elementName = event.target.name;
 //     const value = event.target.value;
@@ -26,7 +27,6 @@
 //   updatePreview();
 // });
 
-
 // data.job = 'hola';
 // data['job'] = 'adios';
 
@@ -34,7 +34,7 @@
 // const propertyName = 'job';
 // console.log(data[propertyName]);
 
-    //Si lo hacemos con [elementName] ya no nos hace falta esto de abajo:
+//Si lo hacemos con [elementName] ya no nos hace falta esto de abajo:
 
 //  } else if (elementName === 'job') {
 //   data.job = value;
