@@ -1,5 +1,4 @@
 .footer {
-  border-top: solid rem(1) $brownish-grey;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,7 +9,6 @@
   bottom: rem(20);
   width: 100%;
   height: 15vh;
-  
 
   &-copy {
     color: $brownish-grey;
@@ -29,4 +27,14 @@
     padding-right: rem(40);
     height: 8vh;
   }
+  @media (min-width: 1200px) {
+    max-width: rem(1500);
+    margin: auto;
+  }
+}
+
+.line-footer {
+  width: 100vw;
+  height: rem(1);
+  background-color: $brownish-grey;
 }

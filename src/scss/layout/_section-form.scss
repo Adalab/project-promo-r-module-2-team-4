@@ -6,33 +6,32 @@
   gap: rem(10);
   margin-bottom: rem(30);
 
-  .main-container{
-    height:20vh;
-  }
- 
-}
-
- @media (min-width: 768px) {
-    .main-container {
-      background-image: linear-gradient(to bottom, $white-four, $white-two 9%);
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      justify-items: center;
-      min-height: 78vh;
-      
-
-      .section-card {
-        grid-row: 2; 
-      }
-
-      .section-form {
-        grid-row: 1; 
-      }
+  .main-container {
+    height: 20vh;
   }
 }
-@media  (min-width: 1024px){ 
+
+@media (min-width: 768px) {
+  .main-container {
+    background-image: linear-gradient(to bottom, $white-four, $white-two 9%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    // justify-items: center;
+    min-height: 78vh;
+
+    .section-card {
+      grid-row: 2;
+    }
+
+    .section-form {
+      grid-row: 1;
+    }
+  }
+}
+@media (min-width: 1024px) {
   .main-container {
     grid-template-columns: 1fr 1.5fr;
-    
+    max-width: rem(1500);
+    margin: auto;
   }
 }

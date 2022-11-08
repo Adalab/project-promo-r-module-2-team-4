@@ -4,15 +4,20 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
 
   @media (min-width: 768px) {
-    width: rem(329);
+    width: rem(370);
     margin: rem(20) 0 rem(20) 0;
     border-radius: rem(6);
   }
   @media (min-width: 1024px) {
     width: rem(585);
+  }
+  @media (min-width: 1100px) {
+    width: rem(600);
+  }
+  @media (min-width: 1100px) {
+    width: rem(650);
   }
 
   &__button {
