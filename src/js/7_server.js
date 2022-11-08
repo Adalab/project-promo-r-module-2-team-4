@@ -1,7 +1,6 @@
 "user strict";
 
-function sendRequest(event) {
-  event.preventDefault();
+function sendRequest() {
   fetch("https://awesome-profile-cards.herokuapp.com/card/", {
     method: "POST",
     body: JSON.stringify(json),
@@ -11,11 +10,15 @@ function sendRequest(event) {
   })
     .then((response) => response.json)
     .then((responseJson) => {
-      if (response.Json.success) {
+      if (responseJson.success) {
         linkShare.innerHTML =
-          "<a href=" + result.cardURL + ">" + result.cardURL + "</a>";
+          "<a href=" +
+          responseJson.cardURL +
+          ">" +
+          responseJson.cardURL +
+          "</a>";
       } else {
-        linkShare.innerHTML = "ERROR:" + result.error;
+        linkShare.innerHTML = "ERROR:" + responseJson.error;
       }
     });
 }
