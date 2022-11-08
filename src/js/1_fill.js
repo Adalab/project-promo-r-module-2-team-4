@@ -43,12 +43,12 @@ function updatePreview() {
   if (data.linkedin === "") {
     previewLinkedin.href = "";
   } else {
-    previewLinkedin.href = `${dataCard.linkedin}`;
+    previewLinkedin.href = `${data.linkedin}`;
   }
   if (data.github === "") {
     previewGithub.href = "";
   } else {
-    previewGithub.href = `https://github.com/${dataCard.gitHub}`;
+    previewGithub.href = `https://github.com/${data.github}`;
   }
 }
 
