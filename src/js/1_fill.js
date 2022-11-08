@@ -72,4 +72,5 @@ form.addEventListener("input", (event) => {
   //guarda lo que está escribiendo en este input dentro de la variable value. Este value se crea solo al rellenar el input.
 
   updatePreview();
+  saveInLocalStorage(data);
 });
