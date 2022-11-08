@@ -25,7 +25,9 @@
     justify-content: space-between;
     padding-left: rem(41);
     padding-right: rem(40);
-    height: 8vh;
+    //con este height se crea un espacio en blanco después del footer
+    //con un background-color se ve
+    // height: 8vh;
   }
   @media (min-width: 1200px) {
     max-width: rem(1500);
