@@ -42,3 +42,4 @@ const sectionCreatedCard= document.querySelector('.js-created-success');
 
 //variable reset
 const resetBtn = document.querySelector('.js-reset-btn');
+const cardArticlePreview = document.querySelector('.js-card-article');
