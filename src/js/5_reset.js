@@ -7,6 +7,8 @@ function resetInput() {
     phoneInput.value = '';
     linkedinInput.value = '';
     githubInput.value = ''; 
+    profileImage.style.backgroundImage = "";
+    profilePreview.style.backgroundImage = "";
 
 }
 
