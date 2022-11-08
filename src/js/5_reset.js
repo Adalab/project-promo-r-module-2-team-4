@@ -1,21 +1,21 @@
 "use strict";
 
 function resetInput() {
-    nameInput.value = '';
-    jobInput.value = '';
-    emailInput.value= '';
-    phoneInput.value = '';
-    linkedinInput.value = '';
-    githubInput.value = ''; 
+  nameInput.value = "";
+  jobInput.value = "";
+  emailInput.value = "";
+  phoneInput.value = "";
+  linkedinInput.value = "";
+  githubInput.value = "";
 }
 
-function handleClickReset (event) {
-    event.preventDefault();
-    resetInput();
-    updatePreview();
-    disableSectionShare();
-    enableCreateBtn();
-  }
+function handleClickReset(event) {
+  event.preventDefault();
+  resetInput();
+  updatePreview();
+  disableSectionShare();
+  enableCreateBtn();
+  saveInLocalStorage(data);
+}
 
-  resetBtn.addEventListener('click',handleClickReset);
-  
+resetBtn.addEventListener("click", handleClickReset);
