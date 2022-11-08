@@ -10,13 +10,13 @@ function resetInput() {
 
 }
 
-function handleClickReset (event) {
-    event.preventDefault();
-    resetInput ();
-    updatePreview();
-    disableSectionShare();
-    enableCreateBtn();
-  }
+function handleClickReset(event) {
+  event.preventDefault();
+  resetInput();
+  updatePreview();
+  disableSectionShare();
+  enableCreateBtn();
+  saveInLocalStorage(data);
+}
 
-  resetBtn.addEventListener('click', handleClickReset);
-  
+resetBtn.addEventListener("click", handleClickReset);

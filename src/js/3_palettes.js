@@ -1,25 +1,25 @@
 "use strict";
-// const paletteOne = document.querySelector(".js-paletteOne");
-// const paletteTwo = document.querySelector(".js-paletteTwo");
-// const paletteThree = document.querySelector(".js-paletteThree");
 
-paletteOne.addEventListener("click", () => {
-  console.log("click1");
+paletteOne.addEventListener("click", (event) => {
   previewCard.classList.remove(`colorsPalette-2`);
   previewCard.classList.remove(`colorsPalette-3`);
   previewCard.classList.add(`colorsPalette-1`);
+  previewCard.classList.add(event.currentTarget.value);
+  data.palette = event.currentTarget.value;
 });
 
-paletteTwo.addEventListener("click", () => {
-  console.log("click2");
+paletteTwo.addEventListener("click", (event) => {
   previewCard.classList.remove(`colorsPalette-1`);
   previewCard.classList.remove(`colorsPalette-3`);
   previewCard.classList.add(`colorsPalette-2`);
+  previewCard.classList.add(event.currentTarget.value);
+  data.palette = event.currentTarget.value;
 });
 
-paletteThree.addEventListener("click", () => {
-  console.log("click3");
+paletteThree.addEventListener("click", (event) => {
   previewCard.classList.remove(`colorsPalette-1`);
   previewCard.classList.remove(`colorsPalette-2`);
   previewCard.classList.add(`colorsPalette-3`);
+  previewCard.classList.add(event.currentTarget.value);
+  data.palette = event.currentTarget.value;
 });
