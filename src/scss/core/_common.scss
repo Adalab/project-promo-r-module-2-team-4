@@ -4,6 +4,9 @@
 .fa-solid {
   cursor: pointer;
 }
+.main-background {
+  background-image: linear-gradient(to bottom, $white-four, $white-two 9%);
+}
 
 //Esto es para la transición que estamos buscando la solución
 // .palette-container {
