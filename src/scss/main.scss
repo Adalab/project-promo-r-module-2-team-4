@@ -1,18 +1,13 @@
 @import "core/variables";
-
-// @import 'components/code';
-// @import 'components/links';
-// @import 'layout/page';
-
 @import "pages/index";
 @import "core/variables";
 @import "core/reset";
 @import "layout/header";
-@import "layout/section-form";
+@import "layout/form";
 @import "layout/footer";
-@import "layout/designs";
-@import "layout/colors-palette";
+@import "layout/design";
+@import "layout/palette";
 @import "layout/fill";
 @import "layout/share";
-@import "layout/section-card";
+@import "layout/card";
 @import "core/common";
