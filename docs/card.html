@@ -16,10 +16,9 @@
     <header class="header">
       <a href="index.html"><img class="header-image" src="./assets/images/cards.svg" /></a>
     </header>
-    <main class="main-container">
-  
+    <main class="main-background">
+      <div class="main-container">
         <section class="mainCreate__card card js-preview">
-
           <button class="card__button js-reset-btn" title="Reset" name="Reset" type="button"><i class="far fa-trash-alt"></i> Reset</button>
           <article class="card__article colorsPalette-1">
             <div class="card__article--data preview-header">
@@ -34,148 +33,146 @@
               <a href="" class="preview-icon js-preview-github"><i class="fa-brands fa-github-alt icon"></i></a>
             </nav>
           </article>
-
         </section>
 
         <!-- Elimino clases color-palettes para que se aplique la función. puestas aplicaban todas a la vez  -->
 
- 
         <form action="" class="section-form js-form">
           <section>
-          <fieldset class="design">
-            <legend class="form-legend">
-              <span class="form-keyboard"><i class="fa-solid fa-object-ungroup"></i></span>
+            <fieldset class="design form">
+              <legend class="form-legend">
+                <span class="form-keyboard"><i class="fa-solid fa-object-ungroup"></i></span>
 
-              <span class="form-title--design">diseña </span>
-              <div class="js-event">
-                <span class="js-design-down hidden form-arrow"><i class="fa-solid fa-chevron-down"></i></span>
-                <span class="js-design-up form-arrow"><i class="fa-solid fa-chevron-up"></i></span>
+                <span class="form-title--design">diseña </span>
+                <div class="js-event">
+                  <span class="js-design-down hidden form-arrow"><i class="fa-solid fa-chevron-down"></i></span>
+                  <span class="js-design-up form-arrow"><i class="fa-solid fa-chevron-up"></i></span>
+                </div>
+              </legend>
+              <div class="palette-container js-design">
+                <div class="colorpalete">
+                  <h2 class="colors">colores</h2>
+
+                  <input type="radio" checked name="palete" class="colors1 js-paletteOne" value="1" id="paymentmethod1" />
+                  <section class="palete">
+                    <div class="colors1__green"></div>
+                    <div class="colors1__blueD"></div>
+                    <div class="colors1__blueL"></div>
+                  </section>
+                </div>
+
+                <div class="colorpalete">
+                  <input type="radio" name="palete" class="colors2 js-paletteTwo" value="2" id="paymentmethod2" />
+                  <section class="palete">
+                    <div class="colors2__blood"></div>
+                    <div class="colors2__rusty"></div>
+                    <div class="colors2__tomato"></div>
+                  </section>
+                </div>
+
+                <div class="colorpalete">
+                  <input type="radio" name="palete" class="colosr3 js-paletteThree" value="3" id="paymentmethod3" />
+                  <section class="palete">
+                    <div class="colors3__slate"></div>
+                    <div class="colors3__orange"></div>
+                    <div class="colors3__greyBlue"></div>
+                  </section>
+                </div>
               </div>
-            </legend>
-            <div class="palette-container  js-design">
-              <div class="colorpalete">
-                <h2 class="colors">colores</h2>
 
-                <input type="radio" checked name="palete" class="colors1 js-paletteOne" value="palette-1" id="paymentmethod1" />
-                <section class="palete">
+              <div class="line"></div>
+            </fieldset>
 
-                  <div class="colors1__green"></div>
-                  <div class="colors1__blueD"></div>
-                  <div class="colors1__blueL"></div>
-                </section>
-              </div>
+            <fieldset class="form">
+              <legend class="form-legend">
+                <span class="form-keyboard"><i class="fa-regular fa-keyboard"></i></span>
+                <span class="form-title">rellena </span>
+                <div class="js-eventFill">
+                  <span class="form-arrow js-fill-down"><i class="fa-solid fa-chevron-down"></i></span>
+                  <span class="form-arrow hidden js-fill-up"><i class="fa-solid fa-chevron-up"></i></span>
+                </div>
+              </legend>
+              <div class="form-container hidden js-fill">
+                <label class="form-label" for="completeName">Nombre completo</label>
 
-              <div class="colorpalete">
-                <input type="radio" name="palete" class="colors2 js-paletteTwo" value="palette-2" id="paymentmethod2" />
-                <section class="palete">
-                  <div class="colors2__blood"></div>
-                  <div class="colors2__rusty"></div>
-                  <div class="colors2__tomato"></div>
-                </section>
-              </div>
+                <input class="form-input js-input-name" type="text" placeholder="Ej: Maricarmen" id="completeName"
+                  name="completeName" required />
 
-              <div class="colorpalete">
-                <input type="radio" name="palete" class="colosr3 js-paletteThree" value="palette-3" id="paymentmethod3" />
-                <section class="palete">
-                  <div class="colors3__slate"></div>
-                  <div class="colors3__orange"></div>
-                  <div class="colors3__greyBlue"></div>
-                </section>
-              </div>
-            </div>
-
-            <div class="line"></div>
-
-          </fieldset>
-
-
-          <fieldset class="form">
-            <legend class="form-legend">
-              <span class="form-keyboard"><i class="fa-regular fa-keyboard"></i></span>
-              <span class="form-title">rellena </span>
-              <div class="js-eventFill">
-                <span class="form-arrow js-fill-down"><i class="fa-solid fa-chevron-down"></i></span>
-                <span class="form-arrow hidden js-fill-up"><i class="fa-solid fa-chevron-up"></i></span>
-              </div>
-            </legend>
-            <div class="form-container hidden js-fill">
-              <label class="form-label" for="completeName">Nombre completo</label>
-
-              <input class="form-input js-input-name" type="text" placeholder="Ej: Maricarmen" id="completeName"
-                name="completeName" required />
-
-              <label class="form-label" for="position">Puesto</label>
-              <input class="form-input js-input-job" type="text" placeholder="Ej: Front-end unicorn" id="position" name="position"
-                required />
-
-              <!-- REPASAR -->
-              <label class="form-label" for>Imagen de perfil</label>
-              <!-- REPASAR -->
-
-              <div class="form-add-image">
-                <label class="form-button" for="addImage">Añadir imagen</label>
-
-
-                <input class="js__profile-upload-btn" type="file" id="addImage" name="addImage" accept="image/*" hidden
+                <label class="form-label" for="position">Puesto</label>
+                <input class="form-input js-input-job" type="text" placeholder="Ej: Front-end unicorn" id="position" name="position"
                   required />
-                <div class="form-checkbox js__profile-preview"></div>
 
-              </div>
+                <!-- REPASAR -->
+                <label class="form-label" for>Imagen de perfil</label>
+                <!-- REPASAR -->
 
-              <label class="form-label" for="email">Email</label>
-              <input class="form-input js-input-email" type="email" placeholder="Ej: maricarmen@gmail.com" id="email" name="email"
-                href="" />
+                <div class="form-add-image">
+                  <label class="form-button" for="addImage">Añadir imagen</label>
 
-              <label class="form-label" for="phone">Teléfono</label>
-              <input class="form-input js-input-phone" type="tel" placeholder="Ej:66687879" id="phone" name="phone"
-                pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{2}" />
 
-              <label class="form-label" for="linkedin">LinkedIn</label>
+                  <input class="js__profile-upload-btn" type="file" id="addImage" name="addImage" accept="image/*" hidden
+                    required />
+                  <div class="form-checkbox js__profile-preview"></div>
 
-              <input class="form-input js-input-linkedin" type="text" placeholder="Ej: https://www.linkedin.com/in/mari-carmen/"
-                id="linkedin" name="linkedin" />
+                </div>
 
-              <label class="form-label" for="github">Github</label>
-              <input class="form-input js-input-github" type="text" placeholder="Ej: maricarmen" id="github" name="github" />
-            </div>
-            <div class="line"></div>
-          </fieldset>
-          <fieldset class="form">
-            <legend class="form-legend">
-              <span class="form-nodes"><i class="fa-sharp fa-solid fa-share-nodes"></i></span>
-              <span class="form-title--share">Comparte </span>
-              <div class="js-eventShare">
-                <span class="js-share-down form-arrow"><i class="fa-solid fa-chevron-down"></i></span>
-                <span class="js-share-up hidden form-arrow"><i class="fa-solid fa-chevron-up"></i></span>
-              </div>
-            </legend>
-            <div class="share-div hidden js-share">
-              <button class="create-btn js-create-button"><i class="fa-solid fa-address-card"></i>Crear tarjeta</button>
-            </div>
-            <div class="line"></div>
-            <div class="card-created-success js-created-success hidden">
-              <div class="card-created js-card-created">
-                <h3 class="card-created-title js-created-title">La tarjeta ha sido creada:</h3>
-                <p class="card-created-url js-link-share">https://awesome-profile-card.com?id=A456DF0001</p>
-              </div>
+                <label class="form-label" for="email">Email</label>
+                <input class="form-input js-input-email" type="email" placeholder="Ej: maricarmen@gmail.com" id="email" name="email"
+                  href="" />
 
-              <div class="share-twitter">
-                <a class="share-twitter-tweet twitter-share-button" href="https://twitter.com/intent/tweet" target="_blank">
-                  <i class="fa-brands fa-twitter twitter-share-button-icon"></i>
-                  Compartir en twitter
-                </a>
+                <label class="form-label" for="phone">Teléfono</label>
+                <input class="form-input js-input-phone" type="tel" placeholder="Ej:66687879" id="phone" name="phone"
+                  pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{2}" />
+
+                <label class="form-label" for="linkedin">LinkedIn</label>
+
+                <input class="form-input js-input-linkedin" type="text" placeholder="Ej: https://www.linkedin.com/in/mari-carmen/"
+                  id="linkedin" name="linkedin" />
+
+                <label class="form-label" for="github">Github</label>
+                <input class="form-input js-input-github" type="text" placeholder="Ej: maricarmen" id="github" name="github" />
               </div>
               <div class="line"></div>
-            </div>
-          </fieldset>
-        </section>
+            </fieldset>
+            <fieldset class="form">
+              <legend class="form-legend">
+                <span class="form-nodes"><i class="fa-sharp fa-solid fa-share-nodes"></i></span>
+                <span class="form-title--share">Comparte </span>
+                <div class="js-eventShare">
+                  <span class="js-share-down form-arrow"><i class="fa-solid fa-chevron-down"></i></span>
+                  <span class="js-share-up hidden form-arrow"><i class="fa-solid fa-chevron-up"></i></span>
+                </div>
+              </legend>
+              <div class="share-div hidden js-share">
+                <button class="create-btn js-create-button"><i class="fa-solid fa-address-card"></i>Crear tarjeta</button>
+              </div>
+              <div class="line"></div>
+              <div class="card-created-success js-created-success hidden">
+                <div class="card-created js-card-created">
+                  <h3 class="card-created-title js-created-title">La tarjeta ha sido creada:</h3>
+                  <p class="card-created-url js-link-share">https://awesome-profile-card.com?id=A456DF0001</p>
+                </div>
+
+                <div class="share-twitter">
+                  <a class="share-twitter-tweet twitter-share-button" href="https://twitter.com/intent/tweet" target="_blank">
+                    <i class="fa-brands fa-twitter twitter-share-button-icon"></i>
+                    Compartir en twitter
+                  </a>
+                </div>
+                <div class="line"></div>
+              </div>
+            </fieldset>
+          </section>
         </form>
+      </div>
     </main>
 
+    <div class="line-footer"></div>
     <footer class="footer">
-        <small class="footer-copy">Awesome profile-cards &copy; 2022 </small>
-        <img  class="footer-img" src="./assets/images/adalab.png" alt="adalab" title="Logo de Adalab" />
-      </footer>
+      <small class="footer-copy">Awesome profile-cards &copy; 2022 </small>
+      <img class="footer-img" src="./assets/images/adalab.png" alt="adalab" title="Logo de Adalab" />
+    </footer>
+
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
