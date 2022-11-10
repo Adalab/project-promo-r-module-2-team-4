@@ -1,78 +1,57 @@
-// "use strict";
-// // flechas de diseña
-// function designArrow(arrowUp, container, arrowDown) {
-//   formContainerFill.classList.add("hidden");
-//   formContainerShare.classList.add("hidden");
-//   arrowUpFill.classList.add("hidden");
-//   arrowUpShare.classList.add("hidden");
-//   arrowDownFill.classList.remove("hidden");
-//   arrowDownShare.classList.remove("hidden");
-//   if (container.classList.contains("hidden")) {
-//     arrowUp.classList.remove("hidden");
-//     container.classList.remove("hidden");
-//     arrowDown.classList.add("hidden");
-//   } else {
-//     arrowUp.classList.add("hidden");
-//     container.classList.add("hidden");
-//     arrowDown.classList.remove("hidden");
-//   }
-// }
+"use strict";
+// flechas de diseña
+function designArrow(container, arrowDown) {
+  formContainerFill.classList.add("hidden");
+  formContainerShare.classList.add("hidden");
+  arrowDownFill.classList.remove("rotate");
+  arrowDownShare.classList.remove("rotate");
+  container.classList.remove("hidden");
+  arrowDown.classList.add("rotate");
+  container.classList.add("transition");
+  container.style.height = container.scrollHeight + "px";
+  }
 
-// // flechas de fill
-// function fillArrow(arrowUp, container, arrowDown) {
-//   formContainerDesign.classList.add("hidden");
-//   formContainerShare.classList.add("hidden");
-//   arrowUpDesign.classList.add("hidden");
-//   arrowUpShare.classList.add("hidden");
-//   arrowDownDesign.classList.remove("hidden");
-//   arrowDownShare.classList.remove("hidden");
-//   if (container.classList.contains("hidden")) {
-//     arrowUp.classList.remove("hidden");
-//     container.classList.remove("hidden");
-//     arrowDown.classList.add("hidden");
-//   } else {
-//     arrowUp.classList.add("hidden");
-//     container.classList.add("hidden");
-//     arrowDown.classList.remove("hidden");
-//   }
-// }
-// // flechas de share
-// function shareArrow(arrowUp, container, arrowDown) {
-//   formContainerDesign.classList.add("hidden");
-//   formContainerFill.classList.add("hidden");
-//   arrowUpFill.classList.add("hidden");
-//   arrowUpDesign.classList.add("hidden");
-//   arrowDownFill.classList.remove("hidden");
-//   arrowDownDesign.classList.remove("hidden");
+// flechas de fill
+function fillArrow(container, arrowDown) {
+  formContainerDesign.classList.add("hidden");
+  formContainerShare.classList.add("hidden");
+  arrowDownDesign.classList.remove("rotate");
+  arrowDownShare.classList.remove("rotate");
+  container.classList.remove("hidden");
+  arrowDown.classList.add("rotate");
+  container.classList.add("transition");
+  container.style.height = container.scrollHeight + "px";
+}
 
-//   if (container.classList.contains("hidden")) {
-//     arrowUp.classList.remove("hidden");
-//     container.classList.remove("hidden");
-//     arrowDown.classList.add("hidden");
-//   } else {
-//     arrowUp.classList.add("hidden");
-//     container.classList.add("hidden");
-//     arrowDown.classList.remove("hidden");
-//   }
-// }
+// flechas de share
+function shareArrow(container, arrowDown) {
+  formContainerDesign.classList.add("hidden");
+  formContainerFill.classList.add("hidden");
+  arrowDownFill.classList.remove("rotate");
+  arrowDownDesign.classList.remove("rotate");
+  container.classList.remove("hidden");
+  arrowDown.classList.add("rotate");
+  container.classList.add("transition");
+  container.style.height = container.scrollHeight + "px";
+}
 
-// // funcion manejadora diseño
-// function handleClicDesignArrow(ev) {
-//   ev.preventDefault();
-//   designArrow(arrowUpDesign, formContainerDesign, arrowDownDesign);
-// }
-// // funcion manejadora de las flechas del formulario
-// function handleClickFillArrow(ev) {
-//   ev.preventDefault();
-//   fillArrow(arrowUpFill, formContainerFill, arrowDownFill);
-// }
-// // funcion manejadora share
-// function handleClicShareArrow(ev) {
-//   ev.preventDefault();
-//   shareArrow(arrowUpShare, formContainerShare, arrowDownShare);
-// }
+// funcion manejadora diseño
+function handleClickDesignArrow(ev) {
+  ev.preventDefault();
+  designArrow(formContainerDesign, arrowDownDesign);
+}
+// funcion manejadora de las flechas del formulario
+function handleClickFillArrow(ev) {
+  ev.preventDefault();
+  fillArrow(formContainerFill, arrowDownFill);
+}
+// funcion manejadora share
+function handleClickShareArrow(ev) {
+  ev.preventDefault();
+  shareArrow(formContainerShare, arrowDownShare);
+}
 
-// // Eventos
-// arrowDesign.addEventListener("click", handleClicDesignArrow);
-// arrowFill.addEventListener("click", handleClickFillArrow);
-// arrowShare.addEventListener("click", handleClicShareArrow);
+// Eventos
+arrowDesign.addEventListener("click", handleClickDesignArrow);
+arrowFill.addEventListener("click", handleClickFillArrow);
+arrowShare.addEventListener("click", handleClickShareArrow);

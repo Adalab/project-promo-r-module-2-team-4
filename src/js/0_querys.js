@@ -44,6 +44,7 @@ const form = document.querySelector(".js-form");
 const createButton = document.querySelector(".js-create-button");
 const sectionCreatedCard = document.querySelector(".js-created-success");
 const linkShare = document.querySelector(".js-link-share");
+const linkTwitter = document.querySelector(".js-twitter-button");
 
 //variable reset
 const resetBtn = document.querySelector(".js-reset-btn");

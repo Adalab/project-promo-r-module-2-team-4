@@ -18,3 +18,7 @@
   overflow: hidden;
   transition: 1s ease height;
 }
+
+.rotate {
+  transform: rotate(180deg);
+}
