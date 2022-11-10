@@ -9,14 +9,14 @@
   text-align: left;
   font-weight: 400;
   width: 100%;
-  padding-left: rem(20);
-  @media (min-width: 768px) {
-    padding-left: rem(60);
-  }
+  // padding-left: rem(20);
+  // @media (min-width: 768px) {
+  //   padding-left: rem(60);
+  // }
 }
-.palette-container {
-  padding-top: rem(18);
-}
+// .palette-container {
+//   padding-top: rem(18);
+// }
 .palete {
   display: flex;
 }
