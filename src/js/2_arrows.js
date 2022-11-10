@@ -1,34 +1,12 @@
 "use strict";
-// flechas de diseña
-function designArrow(container, arrowDown) {
-  formContainerFill.classList.add("hidden");
-  formContainerShare.classList.add("hidden");
-  arrowDownFill.classList.remove("rotate");
-  arrowDownShare.classList.remove("rotate");
-  container.classList.remove("hidden");
-  arrowDown.classList.add("rotate");
-  container.classList.add("transition");
-  container.style.height = container.scrollHeight + "px";
-  }
 
-// flechas de fill
-function fillArrow(container, arrowDown) {
-  formContainerDesign.classList.add("hidden");
-  formContainerShare.classList.add("hidden");
-  arrowDownDesign.classList.remove("rotate");
-  arrowDownShare.classList.remove("rotate");
-  container.classList.remove("hidden");
-  arrowDown.classList.add("rotate");
-  container.classList.add("transition");
-  container.style.height = container.scrollHeight + "px";
-}
+// const { render } = require("node-sass");
 
-// flechas de share
-function shareArrow(container, arrowDown) {
-  formContainerDesign.classList.add("hidden");
-  formContainerFill.classList.add("hidden");
-  arrowDownFill.classList.remove("rotate");
-  arrowDownDesign.classList.remove("rotate");
+function renderSection(formContainer1, formContainer2, arrow1, arrow2, container, arrowDown) {
+  formContainer1.classList.add("hidden");
+  formContainer2.classList.add("hidden");
+  arrow1.classList.remove("rotate");
+  arrow2.classList.remove("rotate");
   container.classList.remove("hidden");
   arrowDown.classList.add("rotate");
   container.classList.add("transition");
@@ -38,17 +16,17 @@ function shareArrow(container, arrowDown) {
 // funcion manejadora diseño
 function handleClickDesignArrow(ev) {
   ev.preventDefault();
-  designArrow(formContainerDesign, arrowDownDesign);
+  renderSection(formContainerFill, formContainerShare, arrowDownFill, arrowDownShare, formContainerDesign, arrowDownDesign);
 }
 // funcion manejadora de las flechas del formulario
 function handleClickFillArrow(ev) {
   ev.preventDefault();
-  fillArrow(formContainerFill, arrowDownFill);
+  renderSection(formContainerDesign, formContainerShare, arrowDownDesign, arrowDownShare, formContainerFill, arrowDownFill);
 }
 // funcion manejadora share
 function handleClickShareArrow(ev) {
   ev.preventDefault();
-  shareArrow(formContainerShare, arrowDownShare);
+  renderSection(formContainerDesign, formContainerFill, arrowDownFill, arrowDownDesign, formContainerShare, arrowDownShare);
 }
 
 // Eventos
