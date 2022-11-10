@@ -1,27 +1,74 @@
 "use strict";
 
-// function handleOnClick(up, down, container) {
-//   up.classList.toggle("hidden");
-//   down.classList.toggle("hidden");
-//   container.classList.toggle("hidden");
+function compareContainer(container) {
+  if (container === "formContainerDesign") {
+    formContainerFill.classList.add("hidden");
+    formContainerShare.classList.add("hidden");
+    arrowUpFill.classList.add("hidden");
+    arrowUpShare.classList.add("hidden");
+    arrowDownFill.classList.remove("hidden");
+    arrowDownShare.classList.remove("hidden");
+  } else if (container === "formContainerFill") {
+    formContainerDesign.classList.add("hidden");
+    formContainerShare.classList.add("hidden");
+    arrowUpDesign.classList.add("hidden");
+    arrowUpShare.classList.add("hidden");
+    arrowDownDesign.classList.remove("hidden");
+    arrowDownShare.classList.remove("hidden");
+  } else {
+    formContainerDesign.classList.add("hidden");
+    formContainerFill.classList.add("hidden");
+    arrowUpFill.classList.add("hidden");
+    arrowUpDesign.classList.add("hidden");
+    arrowDownFill.classList.remove("hidden");
+    arrowDownDesign.classList.remove("hidden");
+  }
+}
+
+function showContent(container, up, down) {
+  container.classList.remove("hidden");
+  up.classList.remove("hidden");
+  down.classList.add("hidden");
+  container.style.height = container.scrollHeight + "px";
+  compareContainer();
+}
+
+function hideContent(container, up, down) {
+  container.classList.add("hidden");
+  up.classList.add("hidden");
+  down.classList.remove("hidden");
+  compareContainer();
+}
+
+// function handleOnClick(container, up, down) {
+//     showContent(container, up, down);
+//     hideContent(container, up, down);
+//   up2.classList.add("hidden");
+//   up3.classList.add("hidden");
+//   if (container.classList.contains("hidden")) {
+//     container.classList.remove("hidden");
+//     up.classList.remove("hidden");
+//     down.classList.add("hidden");
+//     container.style.height = container.scrollHeight + "px";
+//   } else {
+//     container.classList.add("hidden");
+//     up.classList.add("hidden");
+//     down.classList.remove("hidden");
+//     container.style.height = container.scrollHeight + "px";
+//   }
 // }
 
-// // function handleOnClick(up, down, container) {
-// //   const offSet = container.offsetHeight;
-// //   if (container.classList.contains("closed")) {
-// //     container.classList.remove("closed");
-// //     container.setAttribute("style", `height: ${offSet}`);
-// //   } else {
-// //     container.classList.add("closed");
-// //     container.setAttribute("style", `height: ${offSet}`);
-// //   }
-// // }
+arrowUpDesign.addEventListener("click", () =>
+  hideContent(formContainerDesign, arrowUpDesign, arrowDownDesign));
+arrowDownDesign.addEventListener("click", () =>
+  showContent(formContainerDesign, arrowUpDesign, arrowDownDesign));
 
-// arrowUpDesign.addEventListener("click", () => handleOnClick(arrowUpDesign, arrowDownDesign, formContainerDesign));
-// arrowDownDesign.addEventListener("click", () => handleOnClick(arrowUpDesign, arrowDownDesign, formContainerDesign));
+arrowUpFill.addEventListener("click", () =>
+hideContent(formContainerFill, arrowUpFill, arrowDownFill));
+arrowDownFill.addEventListener("click", () =>
+showContent(formContainerFill, arrowUpFill, arrowDownFill));
 
-// arrowUpFill.addEventListener("click", () => handleOnClick(arrowUpFill, arrowDownFill, formContainerFill));
-// arrowDownFill.addEventListener("click", () => handleOnClick(arrowUpFill, arrowDownFill, formContainerFill));
-
-// arrowUpShare.addEventListener("click", () => handleOnClick(arrowUpShare, arrowDownShare, formContainerShare));
-// arrowDownShare.addEventListener("click", () => handleOnClick(arrowUpShare, arrowDownShare, formContainerShare));
+arrowUpShare.addEventListener("click", () =>
+hideContent(formContainerShare, arrowUpShare, arrowDownShare));
+arrowDownShare.addEventListener("click", () =>
+showContent(formContainerShare, arrowUpShare, arrowDownShare));

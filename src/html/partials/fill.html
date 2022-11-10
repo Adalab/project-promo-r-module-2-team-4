@@ -7,18 +7,19 @@
       <span class="form-arrow hidden js-fill-up"><i class="fa-solid fa-chevron-up"></i></span>
     </div>
   </legend>
-  <div class="form-container hidden js-fill">
-    <label class="form-label" for="completeName">Nombre completo</label>
+  <div class="form-container transition hidden js-fill">
+    <p class="form-label">Los campos con * son obligatorios</p>
+    <label class="form-label" for="completeName">Nombre completo*</label>
 
     <input class="form-input js-input-name" type="text" placeholder="Ej: Maricarmen" id="completeName"
       name="completeName" required />
 
-    <label class="form-label" for="position">Puesto</label>
+    <label class="form-label" for="position">Puesto*</label>
     <input class="form-input js-input-job" type="text" placeholder="Ej: Front-end unicorn" id="position" name="position"
       required />
 
     <!-- REPASAR -->
-    <label class="form-label" for>Imagen de perfil</label>
+    <label class="form-label" for>Imagen de perfil*</label>
     <!-- REPASAR -->
 
     <div class="form-add-image">
@@ -31,21 +32,21 @@
 
     </div>
 
-    <label class="form-label" for="email">Email</label>
+    <label class="form-label" for="email">Email*</label>
     <input class="form-input js-input-email" type="email" placeholder="Ej: maricarmen@gmail.com" id="email" name="email"
-      href="" />
+      href="" required/>
 
     <label class="form-label" for="phone">Teléfono</label>
     <input class="form-input js-input-phone" type="tel" placeholder="Ej:66687879" id="phone" name="phone"
-      pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{2}" />
+      pattern="[0-9]{9}" />
 
-    <label class="form-label" for="linkedin">LinkedIn</label>
+    <label class="form-label" for="linkedin">LinkedIn*</label>
 
     <input class="form-input js-input-linkedin" type="text" placeholder="Ej: https://www.linkedin.com/in/mari-carmen/"
-      id="linkedin" name="linkedin" />
+      id="linkedin" name="linkedin" required/>
 
-    <label class="form-label" for="github">Github</label>
-    <input class="form-input js-input-github" type="text" placeholder="Ej: maricarmen" id="github" name="github" />
+    <label class="form-label" for="github">Github*</label>
+    <input class="form-input js-input-github" type="text" placeholder="Ej: maricarmen" id="github" name="github" required />
   </div>
   <div class="line"></div>
 </fieldset>

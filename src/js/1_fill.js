@@ -1,7 +1,7 @@
 "use strict";
 
 //Datos que cambiará el código de la función manejadora
-const data = {
+let data = {
   palette: "",
   name: "",
   job: "",
