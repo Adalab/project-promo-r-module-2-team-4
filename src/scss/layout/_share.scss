@@ -53,13 +53,14 @@
 }
 
 .card-created-url {
-  margin: 5px 13px 0 15px;
+  margin: 5px 13px 0 0;
   text-decoration: none;
   font-family: $mainFont;
   font-size: 12px;
   font-weight: 600;
   color: $dull-orange;
   text-align: center;
+  width: 250px;
 }
 
 .share-twitter {
