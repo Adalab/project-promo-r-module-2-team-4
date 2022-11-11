@@ -1,12 +1,15 @@
 "use strict";
 
 function resetInput() {
-  nameInput.value = "";
-  jobInput.value = "";
-  emailInput.value = "";
-  phoneInput.value = "";
-  linkedinInput.value = "";
-  githubInput.value = "";
+    nameInput.value = '';
+    jobInput.value = '';
+    emailInput.value= '';
+    phoneInput.value = '';
+    linkedinInput.value = '';
+    githubInput.value = ''; 
+    profileImage.style.backgroundImage = "";
+    profilePreview.style.backgroundImage = "";
+
 }
 
 function handleClickReset(event) {
