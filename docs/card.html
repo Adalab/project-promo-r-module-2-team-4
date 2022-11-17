@@ -4,21 +4,105 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://kit.fontawesome.com/bd9669bb11.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image.jpg" href="./assets/images/icon1.png" />
     <link rel="stylesheet" href="./assets/css/main.css" />
+
     <title>Awesome profile-cards</title>
   </head>
 
   <body>
     <header class="header">
-      <a href="index.html"><img class="header-image" src="./assets/images/cards.svg" /></a>
+      <a href="index.html"><img class="header-image" src="./assets/images/card.png" /></a>
     </header>
+    <!--Inspiration https://dribbble.com/shots/4155133-Snitch-Animation -->
+    <!--and https://dribbble.com/shots/2493071-Wizarding-World-Icons -->
+    <!-- <input type="checkbox" name="checkbox" id="animate" checked hidden="hidden" />
+    <label for="animate">
+      <div class="snitch js-snitch">
+        <div class="obj">
+          <div class="body">
+            <div class="flourish"></div>
+            <div class="flourish"></div>
+            <div class="flourish"></div>
+            <div class="flourish">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+            <div class="flourish">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+          </div>
+          <div class="l joint"></div>
+          <div class="l wing">
+            <div class="feather"></div>
+            <div class="feather"></div>
+            <div class="feather"></div>
+          </div>
+          <div class="r joint"></div>
+          <div class="r wing">
+            <div class="feather"></div>
+            <div class="feather"></div>
+            <div class="feather"></div>
+          </div>
+        </div>
+        <div class="shadow"></div>
+      </div>
+    </label> -->
+
     <main class="main-background">
       <div class="main-container">
         <section class="mainCreate__card card js-preview">
+          <div class="snitch-container" id="container">
+            <div id="the-div">
+              <!--Inspiration https://dribbble.com/shots/4155133-Snitch-Animation -->
+              <!--and https://dribbble.com/shots/2493071-Wizarding-World-Icons -->
+              <input type="checkbox" name="checkbox" id="animate" checked hidden="hidden" />
+              <label for="animate">
+                <div class="snitch js-snitch">
+                  <div class="obj">
+                    <div class="body">
+                      <div class="flourish"></div>
+                      <div class="flourish"></div>
+                      <div class="flourish"></div>
+                      <div class="flourish">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                      </div>
+                      <div class="flourish">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                      </div>
+                    </div>
+                    <div class="l joint"></div>
+                    <div class="l wing">
+                      <div class="feather"></div>
+                      <div class="feather"></div>
+                      <div class="feather"></div>
+                    </div>
+                    <div class="r joint"></div>
+                    <div class="r wing">
+                      <div class="feather"></div>
+                      <div class="feather"></div>
+                      <div class="feather"></div>
+                    </div>
+                  </div>
+                </div>
+              </label>
+              <div class="shadow"></div>
+            </div>
+          </div>
           <button class="card__button js-reset-btn" title="Reset" name="Reset" type="button"><i class="far fa-trash-alt"></i> Reset</button>
           <article class="card__article colorsPalette-1">
             <div class="card__article--data preview-header">
@@ -37,16 +121,16 @@
 
         <!-- Elimino clases color-palettes para que se aplique la función. puestas aplicaban todas a la vez  -->
 
+
         <form action="" class="section-form js-form">
           <section>
             <fieldset class="design form">
               <legend class="form-legend">
-                <span class="form-keyboard"><i class="fa-solid fa-object-ungroup"></i></span>
+                <span class="form-keyboard"><i class="icon-form fa-solid fa-object-ungroup"></i></span>
 
                 <span class="form-title--design">diseña </span>
                 <div class="js-event">
-                  <i class="form-arrow js-design-down rotate fa-solid fa-chevron-down"></i>
-                  <span class="js-design-up form-arrow"><i class="hidden fa-solid fa-chevron-up"></i></span>
+                  <i class="form-arrow js-design-down fa-solid fa-wand-sparkles"></i>
                 </div>
               </legend>
               <div class="palette-container js-design">
@@ -85,11 +169,10 @@
 
             <fieldset class="form">
               <legend class="form-legend">
-                <span class="form-keyboard"><i class="fa-regular fa-keyboard"></i></span>
+                <span class="form-keyboard"><i class="icon-form fa-regular fa-keyboard"></i></span>
                 <span class="form-title">rellena </span>
                 <div class="js-eventFill">
-                  <i class="form-arrow js-fill-down fa-solid fa-chevron-down"></i>
-                  <span class="form-arrow hidden js-fill-up"><i class="fa-solid fa-chevron-up"></i></span>
+                  <i class="form-arrow js-fill-down fa-solid fa-wand-sparkles"></i>
                 </div>
               </legend>
               <div class="form-container transition hidden js-fill">
@@ -137,11 +220,10 @@
 
             <fieldset class="form">
               <legend class="form-legend">
-                <span class="form-nodes"><i class="fa-sharp fa-solid fa-share-nodes"></i></span>
+                <span class="form-nodes"><i class="icon-form fa-sharp fa-solid fa-share-nodes"></i></span>
                 <span class="form-title--share">Comparte </span>
                 <div class="js-eventShare">
-                  <i class="js-share-down form-arrow fa-solid fa-chevron-down"></i>
-                  <span class="js-share-up hidden form-arrow"><i class="fa-solid fa-chevron-up hidden"></i></span>
+                  <i class="js-share-down form-arrow fa-solid fa-wand-sparkles"></i>
                 </div>
               </legend>
               <div class="share-div hidden js-share">
@@ -163,6 +245,7 @@
                 <div class="line"></div>
               </div>
             </fieldset>
+
           </section>
         </form>
       </div>
