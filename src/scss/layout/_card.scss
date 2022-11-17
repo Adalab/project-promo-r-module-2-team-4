@@ -1,5 +1,5 @@
 .card {
-  background-image: linear-gradient(to bottom, $silver, $pale-grey);
+  background: linear-gradient(to bottom, rgba(60, 60, 68, 1) 0%, rgba(234, 190, 63, 0.938813025210084) 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,9 +21,9 @@
   }
 
   &__button {
-    background: none;
-    border: solid 1px $white-two;
-    color: $gunmetal;
+    background-color: $reset-bkg;
+    border: solid 1px $border-logo;
+    color: $white;
     margin: 38px 0 20px 0;
     font-size: rem(12);
     line-height: rem(20);
@@ -65,7 +65,7 @@
       }
     }
     &--photo {
-      background: url("../images/giphy.harry.gif");
+      background: url('../images/giphy.harry.gif');
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;

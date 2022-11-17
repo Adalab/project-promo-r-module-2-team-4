@@ -2,23 +2,39 @@ $color1: #3c2e2d;
 $color2: #fdfce6;
 $color3: #efbf65;
 $speed: 1.5s;
-$snitch-sm-size: 90px;
-$snitch-size: 40px;
+$snitch-sm-size: 80px;
+$snitch-size: 30px;
 $border-size: 0.11em;
 $border-size-2: 0.21em;
 $border-sm-size: 0.1em;
 $border-sm-size-2: 0.2em;
 $main-border: solid $border-size $color1;
 
-.snitch {
-  position: relative;
-  top: -200px;
-  left: 600px;
-  text-align: center;
-  width: $snitch-size;
-  height: $snitch-size;
-  cursor: pointer;
+.snitch-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 35vw;
+  height: 30vh;
+  position: absolute;
 }
+
+.snitch {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+    // position: relative;
+    // top: 50px;
+    // left: 500px;
+    // transform: translate(-40%, -50%);
+    text-align: center;
+    width: $snitch-size;
+    height: $snitch-size;
+    cursor: pointer;
+  }
+}
+
 .snitch .obj {
   position: relative;
   width: 100%;
