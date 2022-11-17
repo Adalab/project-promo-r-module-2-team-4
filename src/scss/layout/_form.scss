@@ -16,7 +16,7 @@
     background-image: linear-gradient(to bottom, $white-four, $white-two 9%);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    min-height: 78vh;
+    min-height: 75vh;
 
     .section-card {
       grid-row: 2;
@@ -32,5 +32,6 @@
     grid-template-columns: 1fr 1.5fr;
     max-width: rem(1500);
     margin: auto;
+    min-height: 69vh;
   }
 }

@@ -11,11 +11,17 @@
 }
 .image {
   margin-top: rem(95);
-  width: rem(250);
-  height: rem(63);
+  width: 10rem;
+  height: 10rem;
+  border-radius: 58%;
+  border: 2px solid $border-logo;
   @media all and (min-width: 768px) {
-    width: rem(419);
-    height: rem(105);
+    width: 12rem;
+    height: 12rem;
+  }
+  @media (min-width: 1024px) {
+    width: 14rem;
+    height: 14rem;
   }
 }
 .title-create {

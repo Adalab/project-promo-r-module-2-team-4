@@ -24,5 +24,11 @@
 }
 
 .rotate {
-  transform: rotate(180deg);
+  transform: rotate(90deg);
+}
+.icon-form {
+  color: $reset-bkg;
+}
+.fa-wand-sparkles:hover {
+  color: $border-logo;
 }

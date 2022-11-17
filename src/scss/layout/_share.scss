@@ -11,9 +11,9 @@
   align-items: center;
   width: rem(199);
   height: rem(50);
-  background-color: $dull-orange;
+  background-color: $reset-bkg;
   border-radius: rem(12);
-  border: rgba(0, 0, 0, 0.32);
+  border: 1px solid $border-logo;
   color: $white-two;
   text-transform: uppercase;
   font-size: rem(18);

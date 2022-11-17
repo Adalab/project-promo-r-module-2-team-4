@@ -1,11 +1,18 @@
 .header {
   background-color: $white-two;
-  margin-bottom: rem(20);
+  background-color: $header-bkg;
   &-image {
-    width: rem(201);
-    height: rem(50);
-    margin-left: rem(40);
-    margin-top: rem(31);
+    width: 6rem;
+    height: 6rem;
+    margin-left: 2.5rem;
+    margin-top: 0.6rem;
+    border-radius: 58%;
+    border: 2px solid $border-logo;
+
+    @media (min-width: 1084px) {
+      width: 8.5rem;
+      height: 8.5rem;
+    }
   }
   @media (min-width: 1200px) {
     max-width: rem(1500);

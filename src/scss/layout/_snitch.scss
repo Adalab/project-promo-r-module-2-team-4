@@ -1,0 +1,268 @@
+$color1: #3c2e2d;
+$color2: #fdfce6;
+$color3: #efbf65;
+$speed: 1.5s;
+$snitch-sm-size: 80px;
+$snitch-size: 30px;
+$border-size: 0.11em;
+$border-size-2: 0.21em;
+$border-sm-size: 0.1em;
+$border-sm-size-2: 0.2em;
+$main-border: solid $border-size $color1;
+
+.snitch-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 35vw;
+  height: 30vh;
+  position: absolute;
+}
+
+.snitch {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+    // position: relative;
+    // top: 50px;
+    // left: 500px;
+    // transform: translate(-40%, -50%);
+    text-align: center;
+    width: $snitch-size;
+    height: $snitch-size;
+    cursor: pointer;
+  }
+}
+
+.snitch .obj {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  transition: all ease $speed/3;
+  z-index: 1;
+}
+#animate:checked + label .snitch .obj {
+  top: -2em;
+  animation: hover ease-in-out $speed infinite;
+}
+.snitch .obj .body {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: $color3;
+  border: $main-border;
+  border-width: $border-size-2;
+}
+.snitch .obj .body .flourish {
+  border: $main-border;
+  background: $color3;
+}
+.snitch .obj .body .flourish:nth-child(1) {
+  position: absolute;
+  top: -30%;
+  left: 0;
+  border-radius: 50%;
+  width: 100%;
+  height: 60%;
+  z-index: 10;
+}
+.snitch .obj .body .flourish:nth-child(2) {
+  position: absolute;
+  top: 7.5%;
+  left: -38%;
+  border-radius: 50%;
+  width: 90%;
+  height: 52%;
+  z-index: 9;
+}
+.snitch .obj .body .flourish:nth-child(3) {
+  position: absolute;
+  top: 7.5%;
+  right: -38%;
+  border-radius: 50%;
+  width: 90%;
+  height: 52%;
+  z-index: 9;
+}
+.snitch .obj .body .flourish:nth-child(4) {
+  overflow: hidden;
+  position: absolute;
+  bottom: -15%;
+  right: -26%;
+  border-radius: 50%;
+  width: 70%;
+  height: 60%;
+  z-index: 9;
+}
+.snitch .obj .body .flourish:nth-child(5) {
+  overflow: hidden;
+  position: absolute;
+  bottom: -15%;
+  left: -26%;
+  border-radius: 50%;
+  width: 70%;
+  height: 60%;
+  z-index: 9;
+}
+.snitch .obj .body .flourish .line {
+  position: absolute;
+  right: 0;
+  top: 0.5em;
+  width: 100%;
+  height: $border-size;
+  background: $color1;
+}
+.snitch .obj .body .flourish .line:nth-child(2) {
+  top: 1.4em;
+}
+.snitch .obj .body .flourish .line:nth-child(3) {
+  top: 2.25em;
+}
+.snitch .obj .wing {
+  position: absolute;
+  text-align: right;
+  line-height: 0;
+  top: -70%;
+  left: -165%;
+  width: 180%;
+  height: 90%;
+  transform-origin: bottom right;
+}
+.snitch .obj .r.wing {
+  text-align: left;
+  left: auto;
+  right: -165%;
+  transform-origin: bottom left;
+}
+#animate:checked + label .snitch .obj .wing {
+  animation: flap-left ease-in-out $speed/10 infinite;
+}
+#animate:checked + label .snitch .obj .r.wing {
+  animation: flap-right ease-in-out $speed/10 infinite;
+}
+.snitch .obj .joint {
+  position: absolute;
+  top: 8%;
+  left: 3%;
+  width: 22%;
+  height: 22%;
+  border-radius: 50%;
+  background: $color3;
+  border: $main-border;
+  border-width: $border-size-2;
+  z-index: 11;
+}
+.snitch .obj .r.joint {
+  left: auto;
+  right: 3%;
+}
+.snitch .obj .wing .feather {
+  display: inline-block;
+  width: 100%;
+  height: 40%;
+  margin-top: -1px;
+  background: $color2;
+  border: $main-border;
+  border-width: $border-size-2;
+  border-radius: 0 4em 0 4em;
+}
+.snitch .obj .wing .feather:nth-child(2) {
+  height: 33%;
+  width: 85%;
+  border-top: none;
+  border-radius: 0 0 0 4em;
+}
+.snitch .obj .wing .feather:nth-child(3) {
+  height: 33%;
+  width: 70%;
+  border-radius: 0 0 0 4em;
+  border-top: none;
+}
+.snitch .obj .r.wing .feather {
+  border-radius: 0 0 4em 0;
+}
+.snitch .obj .r.wing .feather:nth-child(1) {
+  border-radius: 4em 0 4em 0;
+}
+.snitch .shadow {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 0%);
+  height: 0;
+  width: 0;
+  background: $color1;
+  opacity: 1;
+  border-radius: 50%;
+  z-index: 0;
+  transition: all ease $speed/3;
+}
+#animate:checked + label .snitch .shadow {
+  opacity: 0.65;
+  height: 10%;
+  left: calc(50% - 25%);
+  width: 50%;
+  animation: shadow-hover ease-in-out $speed infinite;
+}
+
+@keyframes flap-left {
+  0% {
+  }
+  50% {
+    transform: rotate(-40deg) scaley(0.6);
+  }
+  100% {
+  }
+}
+
+@keyframes flap-right {
+  0% {
+  }
+  50% {
+    transform: rotate(40deg) scaley(0.6);
+  }
+  100% {
+  }
+}
+
+@keyframes hover {
+  0% {
+  }
+  50% {
+    transform: translatey(-1.2em);
+  }
+  100% {
+  }
+}
+@keyframes shadow-hover {
+  0% {
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.5;
+  }
+  100% {
+  }
+}
+
+@media (max-width: 750px) {
+  .snitch {
+    width: $snitch-sm-size;
+    height: $snitch-sm-size;
+  }
+  .snitch .obj .body,
+  .snitch .obj .wing .feather,
+  .snitch .obj .joint {
+    border-width: $border-sm-size-2;
+  }
+  .snitch .obj .body .flourish {
+    border: $main-border;
+    border-width: $border-sm-size;
+  }
+  .snitch .obj .body .flourish .line {
+    height: $border-sm-size;
+  }
+}
