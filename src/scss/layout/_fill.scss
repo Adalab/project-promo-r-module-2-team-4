@@ -61,13 +61,17 @@
   &-button {
     width: rem(140);
     height: rem(30);
-    background-color: $dull-orange;
+    background-color: $reset-bkg;
     color: $white-two;
     border: none;
     border-radius: rem(3);
     font-size: rem(14);
-    padding: rem(3) rem(22) rem(7);
+    padding: rem(5) rem(22) rem(7);
     cursor: pointer;
+
+    &:hover {
+      color: $border-logo;
+    }
   }
   &-add-image {
     display: flex;

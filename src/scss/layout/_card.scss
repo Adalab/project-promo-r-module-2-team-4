@@ -32,6 +32,10 @@
     transform: translateX(-115%);
     text-transform: uppercase;
     cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
   }
 
   &__article {
