@@ -24,6 +24,9 @@
 .icon-form {
   color: $reset-bkg;
 }
-.fa-wand-sparkles:hover {
-  color: $border-logo;
+.fa-wand-sparkles {
+  cursor: pointer;
+  &:hover {
+    color: $border-logo;
+  }
 }
