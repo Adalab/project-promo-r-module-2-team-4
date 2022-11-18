@@ -7,22 +7,17 @@
 .main-background {
   background-image: linear-gradient(to bottom, $white-four, $white-two 9%);
 }
-
-//Esto es para la transición que estamos buscando la solución
 .palette-container {
   padding-top: rem(18);
-  // padding-right: rem(20);
 }
 .radio,
 .create-btn {
   cursor: pointer;
 }
-
 .transition {
   overflow: hidden;
   transition: 1s ease height;
 }
-
 .rotate {
   transform: rotate(90deg);
 }
