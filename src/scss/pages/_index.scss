@@ -109,6 +109,11 @@
   text-decoration: none;
   margin-bottom: rem(12);
 
+  &:hover {
+    opacity: 0.95;
+    color: $border-logo;
+  }
+
   @media all and (min-width: 768px) and (min-height: 768px) {
     position: relative;
     top: rem(86);
