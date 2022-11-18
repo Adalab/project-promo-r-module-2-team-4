@@ -19,8 +19,13 @@
   font-size: rem(18);
   font-family: $mainFont;
   margin-bottom: rem(30);
+
   &-disabled {
     background-color: $white;
+  }
+
+  &:hover {
+    color: $border-logo;
   }
 }
 .line {

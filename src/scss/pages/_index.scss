@@ -1,6 +1,6 @@
 .main {
   background-color: $white-four;
-  min-height: 80vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -57,7 +57,7 @@
   height: rem(73.8);
   border: solid rem(1.6);
   border-radius: rem(4);
-  border-color:  rgba(234,190,63,0.938813);
+  border-color: rgba(234, 190, 63, 0.938813);
   margin-top: rem(17.8);
   padding: rem(15);
   @media all and (min-width: 768px) {
