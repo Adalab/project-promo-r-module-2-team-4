@@ -16,6 +16,9 @@
 }
 .transition {
   overflow: hidden;
+  -webkit-transition: 1s ease height;
+  -moz-transition: 1s ease height;
+  -o-transition: 1s ease height;
   transition: 1s ease height;
 }
 .rotate {
